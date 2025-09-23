@@ -1,0 +1,17 @@
+{
+  "name": "name3",
+  "description": "very long description for card",
+  "image": "image_name",
+  "properties_yes": {
+    "red": -30,
+    "yellow": 0,
+    "green": 50,
+    "blue": 50
+  },
+  "properties_no": {
+    "red": 30,
+    "yellow": 0,
+    "green": -50,
+    "blue": -50
+  }
+}
