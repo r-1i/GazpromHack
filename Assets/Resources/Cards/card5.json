@@ -1,0 +1,82 @@
+{
+  "id": 5,
+  "is_start": false,
+  "name": "id5",
+  "description": "very long description for card",
+  "image": "image_name",
+  
+  "properties_yes": {
+    "text": "yes",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 2,
+      "chance": 0.5,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 2,
+      "chance": 0.2,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 2,
+      "chance": 0.3,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    }
+  },
+
+
+  "properties_no": {
+    "text": "yes",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 2,
+      "chance": 0.5,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 2,
+      "chance": 0.2,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    },
+    "neu": {
+      "id_next":-10,
+      "moves_next": 2,
+      "chance": 0.3,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    }
+  }
+}

@@ -168,16 +168,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 974116117752879543, guid: 7f0c56ec489aa3548847dc68c1413a99, type: 3}
   cardParent: {fileID: 473089730}
+  longGame: 1
   loadedCards: []
-  availableCards:
-  - name: 
-    description: 
-    image: 
-    properties:
-      red: 0
-      yellow: 0
-      green: 0
-      blue: 0
+  deck: []
+  usedCards: 
 --- !u!1 &129477476
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,10 +205,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1402610868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 100, y: 161}
-  m_SizeDelta: {x: 100, y: 250}
+  m_AnchorMin: {x: 0.5444815, y: 0.09758996}
+  m_AnchorMax: {x: 0.64070374, y: 0.775885}
+  m_AnchoredPosition: {x: 0, y: -0.5}
+  m_SizeDelta: {x: -4, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129477478
 MonoBehaviour:
@@ -300,10 +294,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1402610868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -300, y: 161}
-  m_SizeDelta: {x: 100, y: 250}
+  m_AnchorMin: {x: 0.17685187, y: 0.09758996}
+  m_AnchorMax: {x: 0.27114815, y: 0.775885}
+  m_AnchoredPosition: {x: -2, y: -0.5}
+  m_SizeDelta: {x: -2, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &266927345
 MonoBehaviour:
@@ -888,10 +882,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1402610868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 300, y: 161}
-  m_SizeDelta: {x: 100, y: 250}
+  m_AnchorMin: {x: 0.73262966, y: 0.09758996}
+  m_AnchorMax: {x: 0.82514817, y: 0.775885}
+  m_AnchoredPosition: {x: -1, y: -0.5}
+  m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519078097
 MonoBehaviour:
@@ -1052,10 +1046,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1402610868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -100, y: 161}
-  m_SizeDelta: {x: 100, y: 250}
+  m_AnchorMin: {x: 0.35837036, y: 0.09758996}
+  m_AnchorMax: {x: 0.4545926, y: 0.775885}
+  m_AnchoredPosition: {x: 1, y: -0.5}
+  m_SizeDelta: {x: -4, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1942425458
 MonoBehaviour:

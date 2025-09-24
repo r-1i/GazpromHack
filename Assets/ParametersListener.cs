@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ParametersListener : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
+public class ParametersListener : MonoBehaviour, IEventReceiver<SetParametersEvent>
 {
     [SerializeField] private ColorType colorType;
     private int value = 50;
@@ -22,8 +22,9 @@ public class ParametersListener : MonoBehaviour, IEventReceiver<OnDestroyCardEve
         image = GetComponent<Image>();
         EventBusHolder.instance.eventBus.Register(this);
     }
+    
 
-    public void OnEvent(OnDestroyCardEvent @event)
+    public void OnEvent(SetParametersEvent @event)
     {
         switch (colorType)
         {
@@ -40,7 +41,8 @@ public class ParametersListener : MonoBehaviour, IEventReceiver<OnDestroyCardEve
                 value += @event.Properties.blue;
                 break;
         }
-        
+
+        value = Mathf.Clamp(value, 0, 100);
         image.fillAmount = value / 100f;
     }
 }

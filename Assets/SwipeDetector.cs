@@ -20,8 +20,8 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private Vector3 startCardPosition;
     private RectTransform rectTransform;
     private Canvas canvas;
-    private CardJsonProperties properties_yes;
-    private CardJsonProperties properties_no;
+    private CardChoice properties_yes;
+    private CardChoice properties_no;
     
     
     void Awake()
@@ -29,9 +29,20 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
 
+		SetProportionalSize();
+
         transform.localScale = Vector3.one * 0.1f;
         transform.DOScale(Vector3.one, swipeDuration).SetEase(Ease.OutBack);
     }
+
+	private void SetProportionalSize()
+	{
+		float targetWidth = (Screen.width / 1080f) * 600f;
+		float targetHeight = (Screen.height / 1920f) * 800f;
+
+		rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, targetWidth);
+		rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, targetHeight);
+	}
 
     public void Initialize(CardJson cardJson)
     {
