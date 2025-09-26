@@ -1,6 +1,8 @@
 {
   "id": 9,
   "is_start": false,
+  "type": 0,
+  
   "name": "id7",
   "description": "after id8 yes",
   "image": "image_name",

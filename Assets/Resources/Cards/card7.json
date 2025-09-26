@@ -1,6 +1,7 @@
 {
   "id": 7,
   "is_start": false,
+  "type": 0,
   "name": "id7",
   "description": "after id6",
   "image": "image_name",

@@ -3,6 +3,7 @@ public class CardJson
 {
     public int id;
     public bool is_start;
+    public int type;
     public string name;
     public string description;
     public string image;

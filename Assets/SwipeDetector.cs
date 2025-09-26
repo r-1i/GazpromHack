@@ -39,7 +39,9 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 	{
 		float targetWidth = (Screen.width / 1080f) * 600f;
 		float targetHeight = (Screen.height / 1920f) * 800f;
+        float posY = -(targetHeight/4);
 
+        rectTransform.anchoredPosition = new Vector3(0, posY, 0);
 		rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, targetWidth);
 		rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, targetHeight);
 	}
@@ -51,6 +53,9 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         properties_yes = cardJson.properties_yes;
         properties_no = cardJson.properties_no;
         icon.sprite = Resources.Load<Sprite>("Images/"+cardJson.image);
+        
+        UIController.instance.leftDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_no.text;
+        UIController.instance.rightDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_yes.text;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -66,12 +71,22 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
         float rotationZ = Mathf.Clamp(delta.x / 20f, -15f, 15f);
         rectTransform.rotation = Quaternion.Euler(0, 0, rotationZ);
+        if (delta.x < 0)
+        {
+            UIController.instance.leftDescription.alpha = Mathf.Abs(delta.x / 100f);
+        }
+        else if (delta.x > 0)
+        {
+            UIController.instance.rightDescription.alpha = Mathf.Abs(delta.x / 100f);
+        }
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         Vector2 delta = eventData.position - startPointerPosition;
-
+        UIController.instance.leftDescription.alpha = 0;
+        UIController.instance.rightDescription.alpha = 0;
         if (Mathf.Abs(delta.x) > swipeThreshold)
         {
             float direction = Mathf.Sign(delta.x);

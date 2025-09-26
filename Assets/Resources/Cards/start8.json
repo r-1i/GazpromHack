@@ -1,6 +1,8 @@
 {
   "id": 8,
   "is_start": true,
+  "type": 1,
+  
   "name": "start: id8",
   "description": "yes - id:9, no - id:10",
   "image": "image_name",

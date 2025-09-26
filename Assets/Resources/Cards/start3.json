@@ -1,6 +1,8 @@
 {
   "id": 3,
   "is_start": true,
+  "type": 0,
+  
   "name": "start: id3",
   "description": "very long description for card",
   "image": "image_name",

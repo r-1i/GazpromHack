@@ -7,11 +7,15 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
     [SerializeField] private GameObject cardPrefab;
     [SerializeField] private Transform cardParent;
 
-
     public bool longGame;
     public List<CardJson> loadedCards;
     public List<CardJson> deck;
     public List<int> usedCards;
+    
+    [SerializeField, Range(0f, 1f)] private float chance0;
+    [SerializeField, Range(0f, 1f)] private float chance1;
+    [SerializeField, Range(0f, 1f)] private float chance2;
+    [SerializeField, Range(0f, 1f)] private float chance3;
     
     private void Start()
     {
@@ -136,21 +140,71 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
                 Debug.LogError($"Ошибка загрузки карты {textAsset.name}: {e.Message}");
             }
         }
+        
+        loadedCards = Shuffle(loadedCards);
     }
+    
+    public List<T> Shuffle<T>(List<T> list)
+    {
+        System.Random rnd = new System.Random();
+        List<T> shuffledList = new List<T>(list);
+        int n = shuffledList.Count;
+        
+        while (n > 1)
+        {
+            n--;
+            int k = rnd.Next(n + 1);
+            T value = shuffledList[k];
+            shuffledList[k] = shuffledList[n];
+            shuffledList[n] = value;
+        }
+        
+        return shuffledList;
+    }
+
+
 
     private void SpawnDeck()
     {
         deck = new List<CardJson>();
+        usedCards = new List<int>();
         List<int> alreadyAdded = new List<int>();
-        while (deck.Count < 3)
-        { 
-            int ind = Random.Range(0, loadedCards.Count);
-            if (loadedCards[ind].is_start && !alreadyAdded.Contains(ind))
+
+        Dictionary<int, float> typeChances = new Dictionary<int, float>
+        {
+            { 0, chance0 },
+            { 1, chance1 },
+            { 2, chance2 },
+            { 3, chance3 }
+        };
+
+        foreach (var loadedCard in loadedCards)
+        {
+            if (loadedCard.is_start && typeChances.ContainsKey(loadedCard.type))
             {
-                alreadyAdded.Add(ind);
-                deck.Add(loadedCards[ind]);
-                usedCards.Add(loadedCards[ind].id);
+                float chance = typeChances[loadedCard.type];
+                if (Random.value <= chance && !alreadyAdded.Contains(loadedCard.id))
+                {
+                    alreadyAdded.Add(loadedCard.id);
+                    deck.Add(loadedCard);
+                    usedCards.Add(loadedCard.id);
+                }
             }
         }
+
+        while (deck.Count < 3)
+        {
+            var candidates = loadedCards.Where(card => card.is_start && !alreadyAdded.Contains(card.id)).ToList();
+            if (candidates.Count == 0)
+                break;
+
+            int ind = Random.Range(0, candidates.Count);
+            var cardToAdd = candidates[ind];
+            alreadyAdded.Add(cardToAdd.id);
+            deck.Add(cardToAdd);
+            usedCards.Add(cardToAdd.id);
+        }
     }
+    
+
 }
