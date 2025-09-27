@@ -47,8 +47,8 @@
   "properties_no": {
     "text": "Кому как...",
     "pos": {
-      "id_next": -10,
-      "moves_next": 2,
+      "id_next": 3,
+      "moves_next": 1,
       "chance": 1,
       "properties": {
         "red": -30,
