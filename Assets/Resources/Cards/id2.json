@@ -1,17 +1,17 @@
 {
-  "id": 4,
+  "id": 2,
   "is_start": false,
   "type": 0,
-  "name": "id4",
-  "description": "very long description for card",
-  "image": "image_name",
+  "name": "Приход в банк",
+  "description": "У Валерия Палыча есть накопления. Как раз пришло время продлить вклад или забрать его. Накапало 1,5 млн. Неплохая сумма",
+  "image": "Babki",
   
   "properties_yes": {
-    "text": "yes",
+    "text": "Ай, молодец!",
     "pos": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.5,
+      "id_next": 3,
+      "moves_next": 1,
+      "chance": 1,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -20,9 +20,9 @@
       }
     },
     "neg": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.2,
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -33,7 +33,7 @@
     "neu": {
       "id_next": -10,
       "moves_next": 2,
-      "chance": 0.3,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -45,11 +45,11 @@
 
 
   "properties_no": {
-    "text": "yes",
+    "text": "Кому как...",
     "pos": {
       "id_next": -10,
       "moves_next": 2,
-      "chance": 0.5,
+      "chance": 1,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -60,7 +60,7 @@
     "neg": {
       "id_next": -10,
       "moves_next": 2,
-      "chance": 0.2,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -71,7 +71,7 @@
     "neu": {
       "id_next":-10,
       "moves_next": 2,
-      "chance": 0.3,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,

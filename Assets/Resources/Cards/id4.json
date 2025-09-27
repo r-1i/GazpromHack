@@ -1,17 +1,17 @@
 {
-  "id": 7,
+  "id": 4,
   "is_start": false,
   "type": 0,
-  "name": "id7",
-  "description": "after id6",
-  "image": "image_name",
+  "name": "Встреча с Марьяной",
+  "description": "Не успел Валерий Палыч. Набрать воздуху в грудь, как инициативу перехватила Марьяна, менеджер банка. Энтузиаст своего дела, виртуозно оперирующая словами «гарантия», «надежно» и «потенциальный доход».",
+  "image": "Mariana",
   
   "properties_yes": {
-    "text": "yes",
+    "text": "Выслушать",
     "pos": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.5,
+      "id_next": 6,
+      "moves_next": 1,
+      "chance": 1,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -20,9 +20,9 @@
       }
     },
     "neg": {
-      "id_next": -10,
+      "id_next": 7,
       "moves_next": 1,
-      "chance": 0.2,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -31,9 +31,9 @@
       }
     },
     "neu": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.3,
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -45,11 +45,11 @@
 
 
   "properties_no": {
-    "text": "yes",
+    "text": "Игнорировать  предложение",
     "pos": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.5,
+      "id_next": 7,
+      "moves_next": 1,
+      "chance": 1,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -58,9 +58,9 @@
       }
     },
     "neg": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.2,
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -69,9 +69,9 @@
       }
     },
     "neu": {
-      "id_next":-10,
-      "moves_next": 2,
-      "chance": 0.3,
+      "id_next":4,
+      "moves_next": 1,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,

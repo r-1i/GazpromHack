@@ -10,9 +10,9 @@
   "properties_yes": {
     "text": "приятно познакомиться",
     "pos": {
-      "id_next": 4,
-      "moves_next": 2,
-      "chance": 0.5,
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 1,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -23,7 +23,7 @@
     "neg": {
       "id_next": 4,
       "moves_next": 2,
-      "chance": 0.2,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -32,9 +32,9 @@
       }
     },
     "neu": {
-      "id_next": 4,
-      "moves_next": 2,
-      "chance": 0.3,
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -50,7 +50,7 @@
     "pos": {
       "id_next": 4,
       "moves_next": 2,
-      "chance": 0.5,
+      "chance": 1,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -61,7 +61,7 @@
     "neg": {
       "id_next": 4,
       "moves_next": 2,
-      "chance": 0.2,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -72,7 +72,7 @@
     "neu": {
       "id_next": 4,
       "moves_next": 2,
-      "chance": 0.3,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,

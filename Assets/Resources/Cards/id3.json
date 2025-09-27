@@ -1,18 +1,17 @@
 {
-  "id": 10,
+  "id": 3,
   "is_start": false,
   "type": 0,
-  
-  "name": "id7",
-  "description": "after id10 no",
-  "image": "image_name",
+  "name": "Зайти?",
+  "description": "В задумчивости наш герой застыл перед входом",
+  "image": "Bank",
   
   "properties_yes": {
-    "text": "yes",
+    "text": "Зайти...",
     "pos": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.5,
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 1,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -21,9 +20,9 @@
       }
     },
     "neg": {
-      "id_next": -10,
+      "id_next": 4,
       "moves_next": 1,
-      "chance": 0.2,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -32,9 +31,9 @@
       }
     },
     "neu": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.3,
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -46,11 +45,11 @@
 
 
   "properties_no": {
-    "text": "yes",
+    "text": "Та пусть лежат дальше...",
     "pos": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.5,
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 1,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -59,9 +58,9 @@
       }
     },
     "neg": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.2,
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -70,9 +69,9 @@
       }
     },
     "neu": {
-      "id_next":-10,
-      "moves_next": 2,
-      "chance": 0.3,
+      "id_next":4,
+      "moves_next": 1,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
