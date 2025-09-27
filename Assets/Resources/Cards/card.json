@@ -1,29 +1,28 @@
 {
-  "id": 1,
-  "is_start": true,
+  "id": 4,
+  "is_start": false,
   "type": 0,
+  "name": "id4",
+  "description": "very long description for card",
+  "image": "image_name1",
   
-  "name": "Знакомство с персонажем",
-  "description": "Это, Валерий Палыч Скородумов, 45 лет, менеджер среднего звена. Человек, который любит надежность (как утюги советских времен) и читает договоры до конца (что уже делает его местной достопримечательностью).",
-  "image": "Valery_Palich",
-
   "properties_yes": {
-    "text": "приятно познакомиться",
+    "text": "yes",
     "pos": {
-      "id_next": 4,
+      "id_next": -10,
       "moves_next": 2,
-      "chance": 0.5,
+      "chance": 1,
       "properties": {
-        "red": -30,
-        "yellow": -20,
+        "red": 0,
+        "yellow": 0,
         "green": -10,
         "blue": 50
       }
     },
     "neg": {
-      "id_next": 4,
+      "id_next": -10,
       "moves_next": 2,
-      "chance": 0.2,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -32,9 +31,9 @@
       }
     },
     "neu": {
-      "id_next": 4,
+      "id_next": -10,
       "moves_next": 2,
-      "chance": 0.3,
+      "chance": 0,
       "properties": {
         "red": -30,
         "yellow": -20,
@@ -46,9 +45,9 @@
 
 
   "properties_no": {
-    "text": "ясно",
+    "text": "no",
     "pos": {
-      "id_next": 4,
+      "id_next": -10,
       "moves_next": 2,
       "chance": 0.5,
       "properties": {
@@ -59,7 +58,7 @@
       }
     },
     "neg": {
-      "id_next": 4,
+      "id_next": -10,
       "moves_next": 2,
       "chance": 0.2,
       "properties": {
@@ -70,7 +69,7 @@
       }
     },
     "neu": {
-      "id_next": 4,
+      "id_next":-10,
       "moves_next": 2,
       "chance": 0.3,
       "properties": {
