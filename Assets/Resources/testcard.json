@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "is_start": true,
+    "type": 0,
+    "name": "Начало пути",
+    "description": "Валерий Палыч, ваш вклад «Надежный, как гаражный замок» подошел к концу. Набежало 1.5 лямов. Марьяна предлагает ИСЖ «Инвестор»! «Это как засолить огурцы, но деньги», — говорит она.",
+    "image": "bank_start",
+    "properties_yes": {
+      "text": "Засолить капитал!",
+      "pos": {
+        "id_next": 10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": 5, "money": -15, "investitions": 15}
+      },
+      "neg": {
+        "id_next": 10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -10, "money": -15, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 2,
+        "chance": 0.3,
+        "properties": {"mood": -5, "money": -15, "investitions": 10}
+      }
+    },
+    "properties_no": {
+      "text": "Не сегодня",
+      "pos": {
+        "id_next": 2,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 10, "money": 5, "family": 5}
+      },
+      "neg": {
+        "id_next": 2,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -10, "family": -5}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -5}
+      }
+    }
+  },
+  {
+    "id": 2,
+    "is_start": false,
+    "type": 0,
+    "name": "Знак свыше",
+    "description": "Внук Степа, пока вы решали с деньгами, на вашем телефоне прошел 15-й уровень в игре «Инвестор-гонки». «Деда, смотри, я тебе почти Харлей выиграл!». Считать это знаком свыше?",
+    "image": "grandson_phone",
+    "properties_yes": {
+      "text": "Внук не может ошибаться!",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 15, "family": 10, "investitions": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": -5, "money": -15, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 2,
+        "chance": 0.3,
+        "properties": {"money": -15, "family": -5, "investitions": 10}
+      }
+    },
+    "properties_no": {
+      "text": "Игнорировать детские шалости",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 5, "family": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"money": 5}
+      }
+    }
+  },
+  {
+    "id": 10,
+    "is_start": false,
+    "type": 1,
+    "name": "Фикус-инвестор",
+    "description": "Ваш фикус, который вы лелеете как третий пенсионный фонд, сбросил лист. Система «Телемед» выдала: «Рекомендуем диверсифицировать растительный портфель. Купить кактус?»",
+    "image": "ficus_cactus",
+    "properties_yes": {
+      "text": "Инвестировать в кактус!",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 15, "investitions": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -10, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Лечить проверенными методами",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 20, "family": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -15, "investitions": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 5}
+      }
+    }
+  },
+  {
+    "id": 11,
+    "is_start": false,
+    "type": 1,
+    "name": "Борщевой портфель",
+    "description": "За обедом вы размышляете, что ваш борщ — это тоже портфель: свекла — акции (рискованно), картошка — облигации (надежно), а мясо — гарантированная база. Осенила ли вас кулинарная гениальность?",
+    "image": "borscht_bowl",
+    "properties_yes": {
+      "text": "Развить теорию!",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 15, "family": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -10, "family": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 5}
+      }
+    },
+    "properties_no": {
+      "text": "Просто есть борщ",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.7,
+        "properties": {"mood": 10, "family": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {"mood": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"family": 5}
+      }
+    }
+  },
+  {
+    "id": 12,
+    "is_start": false,
+    "type": 1,
+    "name": "Соляная инвестиция",
+    "description": "Пока вы следили за котировками, в гараже закончилась соль для засолки. Сосед дядя Яша предлагает «инвестировать» в пару мешков соли по «особой» цене. «На всю жизнь хватит!».",
+    "image": "salt_garage",
+    "properties_yes": {
+      "text": "Купить у дяди Яши",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": 10, "family": 15}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": -20, "money": -10, "family": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5, "money": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Купить в магазине",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 5, "family": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 5}
+      }
+    }
+  },
+  {
+    "id": 20,
+    "is_start": false,
+    "type": 2,
+    "name": "Тень Харлея",
+    "description": "Вы проходили мимо мотосалона. Ваша тень легла на новенький Харлей-Дэвидсон. Продавец крикнул: «Мужчина, ваша тень просит вас купить этого железного коня!». Прислушаться к тени?",
+    "image": "harley_shadow",
+    "properties_yes": {
+      "text": "Зайти и помечтать",
+      "pos": {
+        "id_next": 21,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 25}
+      },
+      "neg": {
+        "id_next": 21,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -20}
+      },
+      "neu": {
+        "id_next": 21,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Идти мимо как взрослый",
+      "pos": {
+        "id_next": 22,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 10, "family": 5}
+      },
+      "neg": {
+        "id_next": 22,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": 22,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {}
+      }
+    }
+  },
+  {
+    "id": 21,
+    "is_start": false,
+    "type": 2,
+    "name": "Финансовая аскеза",
+    "description": "Марьяна, почувствовав вашу мечту, пишет: «Досрочное расторжение ИСЖ ради сиюминутных желаний — враг вашего финансового харлея!». Принять аскезу?",
+    "image": "mariana_message",
+    "properties_yes": {
+      "text": "Отложить мечту",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 5, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -15, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"money": 5}
+      }
+    },
+    "properties_no": {
+      "text": "Спросить о расторжении",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {"mood": 10, "money": 50, "family": -30, "investitions": -50}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.7,
+        "properties": {"mood": -25, "investitions": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -10}
+      }
+    }
+  },
+  {
+    "id": 22,
+    "is_start": false,
+    "type": 2,
+    "name": "Мудрость предков",
+    "description": "Вы устояли перед искушением. Теперь ваша мечта о Харлее живет в гараже, рядом с банками огурцов. Может, это и есть настоящая мудрость — мечтать, но не сходить с пути?",
+    "image": "garage_dream",
+    "properties_yes": {
+      "text": "Продолжать копить",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 10, "investitions": 15}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"family": 5}
+      }
+    },
+    "properties_no": {
+      "text": "Начать копить отдельно",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 15, "money": -5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -10, "money": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    }
+  },
+  {
+    "id": 30,
+    "is_start": false,
+    "type": 3,
+    "name": "Объяснение для внука",
+    "description": "Степа спрашивает: «Деда, а чо это у тебя, деньги в сейфе закопали?». Попытаться обьяснить внуку суть ИСЖ простыми словами?",
+    "image": "grandson_question",
+    "properties_yes": {
+      "text": "Объяснить на примере гаража",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 20, "family": 15, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -10, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Отмахнуться",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"family": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {}
+      }
+    }
+  },
+  {
+    "id": 31,
+    "is_start": false,
+    "type": 3,
+    "name": "Спор с дядей Яшей",
+    "description": "Дядя Яша, узнав про ваш полис, говорит: «Да это лохотрон! Вклады надежнее!». Вступить в полемику и обьяснить разницу между вкладом и ИСЖ?",
+    "image": "uncle_yasha",
+    "properties_yes": {
+      "text": "Блеснуть знанием",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 15, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -15, "investitions": -15}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"family": 5}
+      }
+    },
+    "properties_no": {
+      "text": "Промолчать",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {}
+      }
+    }
+  }
+]

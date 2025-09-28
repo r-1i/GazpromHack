@@ -2,83 +2,49 @@
   "id": 1,
   "is_start": true,
   "type": 0,
-  
-  "name": "Знакомство с персонажем",
-  "description": "Это, Валерий Палыч Скородумов, 45 лет, менеджер среднего звена. Человек, который любит надежность (как утюги советских времен) и читает договоры до конца (что уже делает его местной достопримечательностью).",
-  "image": "Valery_Palich",
-
+  "name": "Начало пути",
+  "description": "Валерий Палыч, ваш вклад «Надежный, как гаражный замок» подошел к концу. Набежало 1.5 лямов. Марьяна предлагает ИСЖ «Инвестор»! «Это как засолить огурцы, но деньги», — говорит она.",
+  "image": "bank_start",
   "properties_yes": {
-    "text": "приятно познакомиться",
+    "text": "Засолить капитал!",
     "pos": {
-      "id_next": 2,
+      "id_next": 10,
       "moves_next": 1,
-      "chance": 1,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
+      "chance": 0.3,
+      "properties": {"mood": 5, "money": -15, "investitions": 15}
     },
     "neg": {
-      "id_next": 4,
-      "moves_next": 2,
-      "chance": 0,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
+      "id_next": 10,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"mood": -10, "money": -15, "family": -5}
     },
     "neu": {
-      "id_next": 2,
-      "moves_next": 1,
-      "chance": 0,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
+      "id_next": -10,
+      "moves_next": 2,
+      "chance": 0.3,
+      "properties": {"mood": -5, "money": -15, "investitions": 10}
     }
   },
-
-
   "properties_no": {
-    "text": "ясно",
+    "text": "Не сегодня",
     "pos": {
       "id_next": 2,
       "moves_next": 1,
-      "chance": 1,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
+      "chance": 0.4,
+      "properties": {"mood": 10, "money": 5, "family": 5}
     },
     "neg": {
-      "id_next": 4,
-      "moves_next": 2,
-      "chance": 0,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
+      "id_next": 2,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"mood": -10, "family": -5}
     },
     "neu": {
-      "id_next": 4,
-      "moves_next": 2,
-      "chance": 0,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
+      "id_next": -1,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"mood": -5}
     }
   }
 }

@@ -29,16 +29,16 @@ public class ParametersListener : MonoBehaviour, IEventReceiver<SetParametersEve
         switch (colorType)
         {
             case ColorType.red:
-                value += @event.Properties.red;
+                value += @event.Properties.mood;
                 break;
             case ColorType.yellow:
-                value += @event.Properties.yellow;
+                value += @event.Properties.family;
                 break;
             case ColorType.green:
-                value += @event.Properties.green;
+                value += @event.Properties.money;
                 break;
             case ColorType.blue:
-                value += @event.Properties.blue;
+                value += @event.Properties.investitions;
                 break;
         }
 

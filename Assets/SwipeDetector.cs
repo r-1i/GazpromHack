@@ -52,7 +52,7 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         description.text = cardJson.description;
         properties_yes = cardJson.properties_yes;
         properties_no = cardJson.properties_no;
-        icon.sprite = Resources.Load<Sprite>("Images/"+cardJson.image);
+        icon.sprite = Resources.Load<Sprite>("Images/"+cardJson.image) ?? Resources.Load<Sprite>("Images/no_image");
         
         UIController.instance.leftDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_no.text;
         UIController.instance.rightDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_yes.text;
