@@ -1,5 +1,5 @@
 {
-  "id": 4,
+  "id": 401,
   "is_start": false,
   "type": 0,
   "name": "Встреча с Марьяной",
@@ -9,7 +9,7 @@
   "properties_yes": {
     "text": "Выслушать",
     "pos": {
-      "id_next": 6,
+      "id_next": 601,
       "moves_next": 1,
       "chance": 1,
       "properties": {
@@ -47,7 +47,7 @@
   "properties_no": {
     "text": "Игнорировать  предложение",
     "pos": {
-      "id_next": 7,
+      "id_next": 701,
       "moves_next": 1,
       "chance": 1,
       "properties": {

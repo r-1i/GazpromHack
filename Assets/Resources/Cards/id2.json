@@ -1,83 +1,50 @@
 {
-  "id": 2,
-  "is_start": false,
-  "type": 0,
-  "name": "Приход в банк",
-  "description": "У Валерия Палыча есть накопления. Как раз пришло время продлить вклад или забрать его. Накапало 1,5 млн. Неплохая сумма",
-  "image": "Babki",
-  
-  "properties_yes": {
-    "text": "Ай, молодец!",
-    "pos": {
-      "id_next": 3,
-      "moves_next": 1,
-      "chance": 1,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
+    "id": 2,
+    "is_start": false,
+    "type": 0,
+    "name": "Знак свыше",
+    "description": "Внук Степа, пока вы решали с деньгами, на вашем телефоне прошел 15-й уровень в игре «Инвестор-гонки». «Деда, смотри, я тебе почти Харлей выиграл!». Считать это знаком свыше?",
+    "image": "grandson_phone",
+    "properties_yes": {
+      "text": "Внук не может ошибаться!",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 15, "family": 10, "investitions": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": -5, "money": -15, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 2,
+        "chance": 0.3,
+        "properties": {"money": -15, "family": -5, "investitions": 10}
       }
     },
-    "neg": {
-      "id_next": 2,
-      "moves_next": 1,
-      "chance": 0,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
-    },
-    "neu": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
-    }
-  },
-
-
-  "properties_no": {
-    "text": "Кому как...",
-    "pos": {
-      "id_next": 3,
-      "moves_next": 1,
-      "chance": 1,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
-    },
-    "neg": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
-      }
-    },
-    "neu": {
-      "id_next":-10,
-      "moves_next": 2,
-      "chance": 0,
-      "properties": {
-        "red": -30,
-        "yellow": -20,
-        "green": -10,
-        "blue": 50
+    "properties_no": {
+      "text": "Игнорировать детские шалости",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 5, "family": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"money": 5}
       }
     }
   }
-}

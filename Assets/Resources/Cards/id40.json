@@ -1,0 +1,50 @@
+  {
+    "id": 40,
+    "is_start": false,
+    "type": 1,
+    "name": "Огуречная биржа",
+    "description": "Дядя Яша предлагает создать «Огуречную биржу» в гараже: «Будем продавать акции на будущий урожай!». Участвовать в сельскохозяйственных фьючерсах?",
+    "image": "cucumber_stock",
+    "properties_yes": {
+      "text": "Стать огуречным магнатом",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 25, "money": 20, "family": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": -20, "money": -15, "family": -15}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5, "money": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Ограничиться ИСЖ",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.8,
+        "properties": {"mood": 10, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {"family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {}
+      }
+    }
+  }

@@ -1,0 +1,50 @@
+  {
+    "id": 25,
+    "is_start": false,
+    "type": 2,
+    "name": "Кризис среднего ИСЖ",
+    "description": "Прошло 2 года. Инвестиции в минусе. Дядя Яша ехидно спрашивает: «Ну что, лохотрон?». Устроить ему лекцию о долгосрочных инвестициях?",
+    "image": "midlife_crisis",
+    "properties_yes": {
+      "text": "Прочесть лекцию о ходле",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 15, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -15, "family": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Промолчать и верить",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 10, "investitions": 15}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {}
+      }
+    }
+  }

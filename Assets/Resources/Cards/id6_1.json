@@ -1,0 +1,83 @@
+{
+  "id": 601,
+  "is_start": false,
+  "type": 0,
+  "name": "Выбор ИСЖ",
+  "description": "Сердце Валерй Палыча, ведомое страхом падения рынков, дрогнуло при словах Марьяны: «Ваши вложения возвращаются на 100% в конце срока! Независимо ни от чего!»",
+  "image": "Stonks",
+  
+  "properties_yes": {
+    "text": "Заманчиво...",
+    "pos": {
+      "id_next": 701,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    },
+    "neg": {
+      "id_next": 7,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    },
+    "neu": {
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    }
+  },
+
+
+  "properties_no": {
+    "text": "Хитрая дамочка. Ну ее...",
+    "pos": {
+      "id_next": 501,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    },
+    "neg": {
+      "id_next": 4,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    },
+    "neu": {
+      "id_next":4,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {
+        "red": -30,
+        "yellow": -20,
+        "green": -10,
+        "blue": 50
+      }
+    }
+  }
+}

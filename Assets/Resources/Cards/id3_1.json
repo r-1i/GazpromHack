@@ -1,15 +1,15 @@
 {
-  "id": 5,
+  "id": 301,
   "is_start": false,
   "type": 0,
-  "name": "Конец",
-  "description": "Ничего не изменилось в жизни Валерий Палыча. МОжет деньги его сгорели, а может и нет... Мы об этом не узнаем... Додумывайте сами. Вот такой вот вклад Шредингера получился как картина Малевича... Понимай как знаешь....",
-  "image": "Kvadrat",
+  "name": "Зайти?",
+  "description": "В задумчивости наш герой застыл перед входом",
+  "image": "Bank",
   
   "properties_yes": {
     "text": "Зайти...",
     "pos": {
-      "id_next": 4,
+      "id_next": 401,
       "moves_next": 1,
       "chance": 1,
       "properties": {
@@ -20,7 +20,7 @@
       }
     },
     "neg": {
-      "id_next": 7,
+      "id_next": 4,
       "moves_next": 1,
       "chance": 0,
       "properties": {
@@ -47,7 +47,7 @@
   "properties_no": {
     "text": "Та пусть лежат дальше...",
     "pos": {
-      "id_next": 5,
+      "id_next": 401,
       "moves_next": 1,
       "chance": 1,
       "properties": {

@@ -1,0 +1,50 @@
+  {
+    "id": 41,
+    "is_start": false,
+    "type": 1,
+    "name": "Борщевой индекс",
+    "description": "Вы заметили, что когда растет цена на свеклу, падают ваши акции. «Борщевой индекс» работает! Поделиться открытием с Марьяной?",
+    "image": "borscht_index",
+    "properties_yes": {
+      "text": "Сообщить о финансовом открытии",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 20, "investitions": 15}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -15}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 5}
+      }
+    },
+    "properties_no": {
+      "text": "Оставить знание при себе",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 10, "investitions": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {}
+      }
+    }
+  }

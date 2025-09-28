@@ -1,0 +1,50 @@
+  {
+    "id": 103,
+    "is_start": false,
+    "type": 4,
+    "name": "ФИНАЛ: ХАРЛЕЙ МЕЧТЫ!",
+    "description": "ЧУДО! Ваши инвестиции выросли на 45%! Вы не только получили гарантию, но и смогли купить Харлей! Степа кричит: «Дед, ты крут!». Вы едете по улице, ветер в лицо, а на заднем сиденье — банка огурцов.",
+    "image": "final_harley",
+    "properties_yes": {
+      "text": "Кататься в закат",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 50, "money": 40, "family": 30, "investitions": 50}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    },
+    "properties_no": {
+      "text": "Покатать внука",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 45, "money": 35, "family": 40, "investitions": 45}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    }
+  }

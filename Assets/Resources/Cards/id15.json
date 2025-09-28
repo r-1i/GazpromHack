@@ -1,0 +1,50 @@
+  {
+    "id": 15,
+    "is_start": false,
+    "type": 1,
+    "name": "Борщ vs Портфель",
+    "description": "Жена говорит: «Опять ты в своем портфеле копаешься! Лучше бы помог борщ помешать!». Сравнить управление портфелем с приготовлением борща?",
+    "image": "borscht_vs_portfolio",
+    "properties_yes": {
+      "text": "Провести кулинарный ликбез",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": 15, "family": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": -15, "family": -15}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Помочь с борщом",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.8,
+        "properties": {"mood": 10, "family": 20}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {"mood": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {"family": 5}
+      }
+    }
+  }

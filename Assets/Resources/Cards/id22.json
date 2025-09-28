@@ -1,0 +1,50 @@
+ {
+    "id": 22,
+    "is_start": false,
+    "type": 2,
+    "name": "Мудрость предков",
+    "description": "Вы устояли перед искушением. Теперь ваша мечта о Харлее живет в гараже, рядом с банками огурцов. Может, это и есть настоящая мудрость — мечтать, но не сходить с пути?",
+    "image": "garage_dream",
+    "properties_yes": {
+      "text": "Продолжать копить",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 10, "investitions": 15}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"family": 5}
+      }
+    },
+    "properties_no": {
+      "text": "Начать копить отдельно",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 15, "money": -5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -10, "money": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    }
+  }

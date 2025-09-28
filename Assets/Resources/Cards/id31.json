@@ -1,0 +1,50 @@
+ {
+    "id": 31,
+    "is_start": false,
+    "type": 3,
+    "name": "Спор с дядей Яшей",
+    "description": "Дядя Яша, узнав про ваш полис, говорит: «Да это лохотрон! Вклады надежнее!». Вступить в полемику и обьяснить разницу между вкладом и ИСЖ?",
+    "image": "uncle_yasha",
+    "properties_yes": {
+      "text": "Блеснуть знанием",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 15, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -15, "investitions": -15}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"family": 5}
+      }
+    },
+    "properties_no": {
+      "text": "Промолчать",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {}
+      }
+    }
+  }

@@ -1,0 +1,50 @@
+  {
+    "id": 104,
+    "is_start": false,
+    "type": 4,
+    "name": "ФИНАЛ: СЕМЕЙНЫЙ КРИЗИС",
+    "description": "Вы так увлеклись инвестициями, что пропустили юбилей жены. Теперь вы спите в гараже, смотрите на графики и едите холодные пельмени. Харлей так и остался мечтой.",
+    "image": "final_crisis",
+    "properties_yes": {
+      "text": "Пытаться наладить отношения",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": -30, "money": 10, "family": -40, "investitions": 15}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    },
+    "properties_no": {
+      "text": "Оправдываться графиками",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": -35, "money": 5, "family": -45, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    }
+  }

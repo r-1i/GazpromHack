@@ -1,0 +1,50 @@
+ {
+    "id": 20,
+    "is_start": false,
+    "type": 2,
+    "name": "Тень Харлея",
+    "description": "Вы проходили мимо мотосалона. Ваша тень легла на новенький Харлей-Дэвидсон. Продавец крикнул: «Мужчина, ваша тень просит вас купить этого железного коня!». Прислушаться к тени?",
+    "image": "harley_shadow",
+    "properties_yes": {
+      "text": "Зайти и помечтать",
+      "pos": {
+        "id_next": 21,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 25}
+      },
+      "neg": {
+        "id_next": 21,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -20}
+      },
+      "neu": {
+        "id_next": 21,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Идти мимо как взрослый",
+      "pos": {
+        "id_next": 22,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 10, "family": 5}
+      },
+      "neg": {
+        "id_next": 22,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -10}
+      },
+      "neu": {
+        "id_next": 22,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {}
+      }
+    }
+  }
