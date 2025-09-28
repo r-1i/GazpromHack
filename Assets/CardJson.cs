@@ -1,3 +1,5 @@
+using UnityEngine.Serialization;
+
 [System.Serializable]
 public class CardJson
 {
@@ -32,8 +34,8 @@ public class PosNegNeu
 [System.Serializable]
 public class CardJsonProperties
 {
-    public int red;
-    public int yellow;
-    public int green;
-    public int blue;
+    [FormerlySerializedAs("red")] public int mood;
+    [FormerlySerializedAs("green")] public int family;
+    [FormerlySerializedAs("yellow")] public int money;
+    [FormerlySerializedAs("blue")] public int investitions;
 }
