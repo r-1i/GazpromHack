@@ -37,8 +37,8 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
 	private void SetProportionalSize()
 	{
-		float targetWidth = (Screen.width / 1080f) * 600f;
-		float targetHeight = (Screen.height / 1920f) * 800f;
+		float targetWidth = (Screen.width / 1080f) * 800f;
+		float targetHeight = (Screen.height / 1920f) * 1200f;
         float posY = -(targetHeight/4);
 
         rectTransform.anchoredPosition = new Vector3(0, posY, 0);
@@ -74,10 +74,12 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (delta.x < 0)
         {
             UIController.instance.leftDescription.alpha = Mathf.Abs(delta.x / 100f);
+            UIController.instance.rightDescription.alpha = 0;
         }
         else if (delta.x > 0)
         {
             UIController.instance.rightDescription.alpha = Mathf.Abs(delta.x / 100f);
+            UIController.instance.leftDescription.alpha = 0;
         }
 
     }
