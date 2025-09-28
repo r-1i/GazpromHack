@@ -12,10 +12,13 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
     public List<CardJson> deck;
     public List<int> usedCards;
     
+    // Закомментированы поля шансов, так как логика шансов отключена из за пакостей дипсика в генерации json'ов карточек
+    /*
     [SerializeField, Range(0f, 1f)] private float chance0;
     [SerializeField, Range(0f, 1f)] private float chance1;
     [SerializeField, Range(0f, 1f)] private float chance2;
     [SerializeField, Range(0f, 1f)] private float chance3;
+    */
     
     private void Start()
     {
@@ -112,7 +115,7 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
                 name = "Empy card",
                 description = "No deck, Game over",
                 id = -100,
-                image = "image_name",
+                image = "no_image",
                 
             };
         }
@@ -170,6 +173,8 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
         usedCards = new List<int>();
         List<int> alreadyAdded = new List<int>();
 
+        // Закомментирована логика шансов спавна по type
+        /*
         Dictionary<int, float> typeChances = new Dictionary<int, float>
         {
             { 0, chance0 },
@@ -191,7 +196,21 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
                 }
             }
         }
+        */
 
+        // Спавним любые стартовые карты без учета шансов
+        foreach (var loadedCard in loadedCards)
+        {
+            if (loadedCard.is_start && !alreadyAdded.Contains(loadedCard.id))
+            {
+                alreadyAdded.Add(loadedCard.id);
+                deck.Add(loadedCard);
+                usedCards.Add(loadedCard.id);
+            }
+        }
+
+        // Удален цикл while, так как теперь все стартовые карты добавляются сразу
+        /*
         while (deck.Count < 3)
         {
             var candidates = loadedCards.Where(card => card.is_start && !alreadyAdded.Contains(card.id)).ToList();
@@ -204,6 +223,7 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
             deck.Add(cardToAdd);
             usedCards.Add(cardToAdd.id);
         }
+        */
     }
     
 
