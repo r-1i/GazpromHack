@@ -9,6 +9,9 @@ public class UIController : MonoBehaviour
 
     public CanvasGroup leftDescription;
     public CanvasGroup rightDescription;
+
+    public UISize leftBubble;
+    public UISize rightBubble;
     
     private void Awake()
     {

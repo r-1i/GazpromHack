@@ -73,13 +73,14 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         rectTransform.rotation = Quaternion.Euler(0, 0, rotationZ);
         if (delta.x < 0)
         {
-            UIController.instance.leftDescription.alpha = Mathf.Abs(delta.x / 100f);
-            UIController.instance.rightDescription.alpha = 0;
+            UIController.instance.rightBubble.SetVisibilityPercent(-delta.x);
+            UIController.instance.leftBubble.SetVisibilityPercent(0);
+            
         }
         else if (delta.x > 0)
         {
-            UIController.instance.rightDescription.alpha = Mathf.Abs(delta.x / 100f);
-            UIController.instance.leftDescription.alpha = 0;
+            UIController.instance.leftBubble.SetVisibilityPercent(delta.x);
+            UIController.instance.rightBubble.SetVisibilityPercent(0);
         }
 
     }
@@ -87,8 +88,9 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnEndDrag(PointerEventData eventData)
     {
         Vector2 delta = eventData.position - startPointerPosition;
-        UIController.instance.leftDescription.alpha = 0;
-        UIController.instance.rightDescription.alpha = 0;
+        UIController.instance.leftBubble.SetVisibilityPercent(0);
+        UIController.instance.rightBubble.SetVisibilityPercent(0);
+            
         if (Mathf.Abs(delta.x) > swipeThreshold)
         {
             float direction = Mathf.Sign(delta.x);
