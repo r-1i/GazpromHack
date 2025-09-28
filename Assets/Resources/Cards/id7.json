@@ -1,0 +1,50 @@
+{
+  "id": 7,
+  "is_start": false,
+  "type": 1,
+  "name": "Внук и инвестиции",
+  "description": "Степа спрашивает: «Деда, а когда мы уже на харлее кататься будем?». Объяснить внуку, что инвестиции — это как растить дерево: нужно время?",
+  "image": "grandson_harley",
+  "properties_yes": {
+    "text": "Устроить финансовый ликбез",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"mood": 15, "family": 10, "investitions": 8}
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"mood": -10, "family": -5}
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"family": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Пообещать покатать на велосипеде",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.7,
+      "properties": {"mood": 10, "family": 15}
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"mood": -5}
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.1,
+      "properties": {}
+    }
+  }
+}

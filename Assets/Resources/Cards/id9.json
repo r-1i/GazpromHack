@@ -1,0 +1,50 @@
+{
+  "id": 9,
+  "is_start": false,
+  "type": 1,
+  "name": "Гаражная бухгалтерия",
+  "description": "Разбирая старые вещи в гараже, вы нашли калькулятор 90-х. «Вот на чем я считал первые доходы!». Попробовать рассчитать доходность ИСЖ на ретро-калькуляторе?",
+  "image": "garage_calculator",
+  "properties_yes": {
+    "text": "Ностальгировать и считать",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"mood": 15, "investitions": 10}
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"mood": -10}
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"mood": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Вернуться к современным технологиям",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"mood": 10, "investitions": 5}
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"mood": -5}
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.1,
+      "properties": {}
+    }
+  }
+}

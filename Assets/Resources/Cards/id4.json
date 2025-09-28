@@ -1,0 +1,50 @@
+{
+  "id": 4,
+  "is_start": false,
+  "type": 1,
+  "name": "Первый отчет",
+  "description": "Пришел первый инвестиционный отчет. Ваш портфель вырос на 2.3%! Марьяна пишет: «Видите, как растут ваши сбережения!». Рассказать жене о успехе?",
+  "image": "first_report",
+  "properties_yes": {
+    "text": "Похвастаться финансовым успехом",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"mood": 15, "family": 10, "investitions": 10}
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"mood": -10, "family": -10}
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"mood": 5}
+    }
+  },
+  "properties_no": {
+    "text": "Скромно промолчать",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"mood": 10, "investitions": 5}
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"mood": -5}
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {}
+    }
+  }
+}

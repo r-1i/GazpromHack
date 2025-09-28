@@ -1,0 +1,50 @@
+{
+  "id": 6,
+  "is_start": false,
+  "type": 1,
+  "name": "Телемед и бессонница",
+  "description": "Ночью вы не можете уснуть, думая о инвестициях. Система «Телемед» предлагает: «Беспокойство о финансах? Пройдите тест на стрессоустойчивость!». Довериться цифровому психологу?",
+  "image": "telemed_night",
+  "properties_yes": {
+    "text": "Пройти тест",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"mood": 15, "investitions": 5}
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"mood": -10, "money": -5}
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"mood": -5}
+    }
+  },
+  "properties_no": {
+    "text": "Зайться огуречной терапией",
+    "pos": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.6,
+      "properties": {"mood": 10, "family": 5}
+    },
+    "neg": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"mood": -5}
+    },
+    "neu": {
+      "id_next": -10,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {}
+    }
+  }
+}

@@ -8,13 +8,13 @@
     "properties_yes": {
       "text": "Засолить капитал!",
       "pos": {
-        "id_next": 10,
+        "id_next": 3,
         "moves_next": 1,
         "chance": 0.3,
         "properties": {"mood": 5, "money": -15, "investitions": 15}
       },
       "neg": {
-        "id_next": 10,
+        "id_next": 3,
         "moves_next": 1,
         "chance": 0.4,
         "properties": {"mood": -10, "money": -15, "family": -5}
