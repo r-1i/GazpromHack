@@ -1,50 +1,50 @@
 {
-  "id": 1,
-  "is_start": true,
-  "type": 0,
-  "name": "Начало пути",
-  "description": "Валерий Палыч, ваш вклад «Надежный, как гаражный замок» подошел к концу. Набежало 1.5 лямов. Марьяна предлагает ИСЖ «Инвестор»! «Это как засолить огурцы, но деньги», — говорит она.",
-  "image": "bank_start",
-  "properties_yes": {
-    "text": "Засолить капитал!",
-    "pos": {
-      "id_next": 10,
-      "moves_next": 1,
-      "chance": 0.3,
-      "properties": {"mood": 5, "money": -15, "investitions": 15}
+    "id": 1,
+    "is_start": true,
+    "type": 0,
+    "name": "Начало пути",
+    "description": "Валерий Палыч, ваш вклад «Надежный, как гаражный замок» подошел к концу. Набежало 1.5 лямов. Марьяна предлагает ИСЖ «Инвестор»! «Это как засолить огурцы, но деньги», — говорит она.",
+    "image": "bank_start",
+    "properties_yes": {
+      "text": "Засолить капитал!",
+      "pos": {
+        "id_next": 10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": 5, "money": -15, "investitions": 15}
+      },
+      "neg": {
+        "id_next": 10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -10, "money": -15, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 2,
+        "chance": 0.3,
+        "properties": {"mood": -5, "money": -15, "investitions": 10}
+      }
     },
-    "neg": {
-      "id_next": 10,
-      "moves_next": 1,
-      "chance": 0.4,
-      "properties": {"mood": -10, "money": -15, "family": -5}
-    },
-    "neu": {
-      "id_next": -10,
-      "moves_next": 2,
-      "chance": 0.3,
-      "properties": {"mood": -5, "money": -15, "investitions": 10}
-    }
-  },
-  "properties_no": {
-    "text": "Не сегодня",
-    "pos": {
-      "id_next": 2,
-      "moves_next": 1,
-      "chance": 0.4,
-      "properties": {"mood": 10, "money": 5, "family": 5}
-    },
-    "neg": {
-      "id_next": 2,
-      "moves_next": 1,
-      "chance": 0.3,
-      "properties": {"mood": -10, "family": -5}
-    },
-    "neu": {
-      "id_next": -1,
-      "moves_next": 1,
-      "chance": 0.3,
-      "properties": {"mood": -5}
+    "properties_no": {
+      "text": "Не сегодня",
+      "pos": {
+        "id_next": 2,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 10, "money": 5, "family": 5}
+      },
+      "neg": {
+        "id_next": 2,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -10, "family": -5}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -5}
+      }
     }
   }
-}

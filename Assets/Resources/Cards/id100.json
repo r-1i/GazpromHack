@@ -1,0 +1,50 @@
+  {
+    "id": 100,
+    "is_start": false,
+    "type": 4,
+    "name": "ФИНАЛ: И СНОВА В ГАРАЖ!",
+    "description": "Вы дожили! Вы получили назад свои 1.5 млн + 120 тыс. бонусом. Вы не стали богачом, но ваши деньги целы и даже подросли. Вы выходите из банка, кладете чек в портфель и идете в гараж. Ключ скрипит по-старому.",
+    "image": "final_garage",
+    "properties_yes": {
+      "text": "Хрустеть огурцами и мечтать",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 30, "money": 25, "family": 20, "investitions": 25}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    },
+    "properties_no": {
+      "text": "Начать копить на Харлей",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 25, "money": 20, "family": 15, "investitions": 20}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    }
+  }

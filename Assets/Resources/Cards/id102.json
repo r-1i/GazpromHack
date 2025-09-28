@@ -1,0 +1,50 @@
+  {
+    "id": 102,
+    "is_start": false,
+    "type": 4,
+    "name": "ФИНАЛ: ПЕРЕСОЛ",
+    "description": "Вы не выдержали и досрочно расторгли договор. Штрафы съели треть суммы. «Это как пересолить огурцы», — философствуете вы. Деньги тают, харлей туманнеет.",
+    "image": "final_salt",
+    "properties_yes": {
+      "text": "Извлечь горький урок",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": -20, "money": -30, "family": -15, "investitions": -25}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    },
+    "properties_no": {
+      "text": "Виновато молчать",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": -25, "money": -25, "family": -20, "investitions": -30}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    }
+  }

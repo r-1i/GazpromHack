@@ -1,0 +1,50 @@
+  {
+    "id": 105,
+    "is_start": false,
+    "type": 4,
+    "name": "ФИНАЛ: ОГУРЕЧНЫЙ КОРОЛЬ",
+    "description": "Ирония судьбы! Ваш ИСЖ принес скромный доход, но рецепт соленых огурцов, которым вы поделились с дядей Яшей, сделал вас местной знаменитостью! Теперь у вас своя мини-фабрика в гараже.",
+    "image": "final_cucumber_king",
+    "properties_yes": {
+      "text": "Наслаждаться огуречной славой",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 35, "money": 20, "family": 25, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    },
+    "properties_no": {
+      "text": "Развивать бизнес",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 30, "money": 25, "family": 20, "investitions": 15}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    }
+  }

@@ -1,0 +1,50 @@
+{
+    "id": 21,
+    "is_start": false,
+    "type": 2,
+    "name": "Финансовая аскеза",
+    "description": "Марьяна, почувствовав вашу мечту, пишет: «Досрочное расторжение ИСЖ ради сиюминутных желаний — враг вашего финансового харлея!». Принять аскезу?",
+    "image": "mariana_message",
+    "properties_yes": {
+      "text": "Отложить мечту",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.6,
+        "properties": {"mood": 5, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -15, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"money": 5}
+      }
+    },
+    "properties_no": {
+      "text": "Спросить о расторжении",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.1,
+        "properties": {"mood": 10, "money": 50, "family": -30, "investitions": -50}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.7,
+        "properties": {"mood": -25, "investitions": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -10}
+      }
+    }
+  }
