@@ -1,0 +1,20 @@
+{
+  "id": 71,
+  "is_start": false,
+  "type": 2,
+  "name": "Наследство без хлопот",
+  "description": "«И еще, — добавляет Марьяна, — деньги сразу идут выгодоприобретателю, минуя наследственные споры. Никаких судов, никаких долгих ожиданий!» Цените ли вы простоту и скорость?",
+  "image": "easy_inheritance",
+  "properties_yes": {
+    "text": "Да, бюрократия меня пугает",
+    "pos": {"id_next": 90, "moves_next": 1, "chance": 1.0, "properties": {"mood": 15, "family": 10, "investitions": 10}},
+	"neg": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Наследство — дело далекого будущего",
+    "pos": {"id_next": 80, "moves_next": 1, "chance": 1.0, "properties": {"mood": -5}},
+	"neg": {"id_next": 80, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 80, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

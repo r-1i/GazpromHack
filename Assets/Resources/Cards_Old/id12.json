@@ -1,0 +1,50 @@
+  {
+    "id": 12,
+    "is_start": false,
+    "type": 1,
+    "name": "Соляная инвестиция",
+    "description": "Пока вы следили за котировками, в гараже закончилась соль для засолки. Сосед дядя Яша предлагает «инвестировать» в пару мешков соли по «особой» цене. «На всю жизнь хватит!».",
+    "image": "salt_garage",
+    "properties_yes": {
+      "text": "Купить у дяди Яши",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": 10, "family": 15}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": -20, "money": -10, "family": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5, "money": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Купить в магазине",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 5, "family": 10}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 5}
+      }
+    }
+  }

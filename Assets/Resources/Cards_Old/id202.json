@@ -1,0 +1,49 @@
+  {
+    "id": 202,
+    "is_start": false,
+    "type": 4,
+  "name": "Неизвестность",
+    "description": "А вот если бы Валерий Павлович зашел в банк история закрутилась бы куда интереснее",
+    "image": "Kvadrat_Malka",
+    "properties_yes": {
+      "text": "Конец",
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 35, "money": 20, "family": 25, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    },
+    "properties_no": {
+      "text": "Конец",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 30, "money": 25, "family": 20, "investitions": 15}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    }
+  }

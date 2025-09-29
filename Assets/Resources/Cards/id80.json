@@ -1,0 +1,20 @@
+{
+  "id": 80,
+  "is_start": false,
+  "type": 0,
+  "name": "Рост выше инфляции",
+  "description": "Марьяна показывает графики: «Смотрите, вклад едва покрывает инфляцию, а наш портфель из акций и облигаций может дать до 40% доходности! Риск управляемый, потенциал — реальный!» Заинтересовал ли вас инвестиционный подход?",
+  "image": "growth_potential",
+  "properties_yes": {
+    "text": "Да, хочу больше, чем инфляция",
+    "pos": {"id_next": 81, "moves_next": 1, "chance": 1.0, "properties": {"mood": 10, "investitions": 15}},
+	"neg": {"id_next": 81, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 81, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Риск — это не для меня",
+    "pos": {"id_next": 90, "moves_next": 1, "chance": 1.0, "properties": {"mood": -10, "investitions": -10}},
+	"neg": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

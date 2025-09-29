@@ -1,0 +1,50 @@
+{
+    "id": 10,
+    "is_start": false,
+    "type": 1,
+    "name": "Фикус-инвестор",
+    "description": "Ваш фикус, который вы лелеете как третий пенсионный фонд, сбросил лист. Система «Телемед» выдала: «Рекомендуем диверсифицировать растительный портфель. Купить кактус?»",
+    "image": "ficus_cactus",
+    "properties_yes": {
+      "text": "Инвестировать в кактус!",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": 15, "investitions": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.4,
+        "properties": {"mood": -10, "family": -5}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": -5}
+      }
+    },
+    "properties_no": {
+      "text": "Лечить проверенными методами",
+      "pos": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.5,
+        "properties": {"mood": 20, "family": 5}
+      },
+      "neg": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.3,
+        "properties": {"mood": -15, "investitions": -10}
+      },
+      "neu": {
+        "id_next": -10,
+        "moves_next": 1,
+        "chance": 0.2,
+        "properties": {"mood": 5}
+      }
+    }
+  }

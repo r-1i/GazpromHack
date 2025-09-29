@@ -1,50 +1,52 @@
 {
-    "id": 11,
-    "is_start": false,
-    "type": 1,
-    "name": "Борщевой портфель",
-    "description": "За обедом вы размышляете, что ваш борщ — это тоже портфель: свекла — акции (рискованно), картошка — облигации (надежно), а мясо — гарантированная база. Осенила ли вас кулинарная гениальность?",
-    "image": "borscht_bowl",
-    "properties_yes": {
-      "text": "Развить теорию!",
-      "pos": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.6,
-        "properties": {"mood": 15, "family": 5}
-      },
-      "neg": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.2,
-        "properties": {"mood": -10, "family": -10}
-      },
-      "neu": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.2,
-        "properties": {"mood": 5}
-      }
+  "id": 11,
+  "is_start": false,
+  "type": 0,
+  
+  "name": "Знакомство с персонажем",
+  "description": "Это, Валерий Палыч Скородумов, 45 лет, менеджер среднего звена. Человек, который любит надежность (как утюги советских времен) и читает договоры до конца (что уже делает его местной достопримечательностью).",
+  "image": "valery_palich",
+
+  "properties_yes": {
+    "text": "Приятно познакомиться",
+    "pos": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
     },
-    "properties_no": {
-      "text": "Просто есть борщ",
-      "pos": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.7,
-        "properties": {"mood": 10, "family": 10}
-      },
-      "neg": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.1,
-        "properties": {"mood": -5}
-      },
-      "neu": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.2,
-        "properties": {"family": 5}
-      }
+    "neg": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Ясно",
+    "pos": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 12,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
     }
   }
+}

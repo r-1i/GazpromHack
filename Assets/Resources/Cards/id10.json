@@ -1,50 +1,50 @@
 {
-    "id": 10,
-    "is_start": false,
-    "type": 1,
-    "name": "Фикус-инвестор",
-    "description": "Ваш фикус, который вы лелеете как третий пенсионный фонд, сбросил лист. Система «Телемед» выдала: «Рекомендуем диверсифицировать растительный портфель. Купить кактус?»",
-    "image": "ficus_cactus",
-    "properties_yes": {
-      "text": "Инвестировать в кактус!",
-      "pos": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.4,
-        "properties": {"mood": 15, "investitions": 5}
-      },
-      "neg": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.4,
-        "properties": {"mood": -10, "family": -5}
-      },
-      "neu": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.2,
-        "properties": {"mood": -5}
-      }
+  "id": 10,
+  "is_start": true,
+  "type": 0,
+  "name": "Суть игры",
+  "description": "Привет! Ты проживешь историю некоторых клиентов ГазПромБанка. Эти ребята будут попадать в самые разные ситуации. делай свайп влево или вправо чтобы помочь им принять решение в ситуациях",
+  "image": "swipe",
+  "properties_yes": {
+    "text": "Проще пареной репы!",
+    "pos": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
     },
-    "properties_no": {
-      "text": "Лечить проверенными методами",
-      "pos": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.5,
-        "properties": {"mood": 20, "family": 5}
-      },
-      "neg": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.3,
-        "properties": {"mood": -15, "investitions": -10}
-      },
-      "neu": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.2,
-        "properties": {"mood": 5}
-      }
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Легко!",
+    "pos": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
     }
   }
+}

@@ -1,6 +1,6 @@
 {
   "id": 1001,
-  "is_start": true,
+  "is_start": false,
   "type": 0,
   
   "name": "Знакомство с персонажем",
@@ -10,7 +10,7 @@
   "properties_yes": {
     "text": "приятно познакомиться",
     "pos": {
-      "id_next": 201,
+      "id_next": 1,
       "moves_next": 1,
       "chance": 1,
       "properties": {
@@ -48,7 +48,7 @@
   "properties_no": {
     "text": "ясно",
     "pos": {
-      "id_next": 201,
+      "id_next": 1,
       "moves_next": 1,
       "chance": 1,
       "properties": {

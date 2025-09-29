@@ -1,50 +1,50 @@
-  {
-    "id": 13,
-    "is_start": false,
-    "type": 1,
-    "name": "Телемед и огуречный кризис",
-    "description": "Система «Телемед», проанализировав ваши запросы, выдает: «Обнаружена зависимость от соленых огурцов. Рекомендуем цифровой детокс и консультацию диетолога». Принять рекомендации ИИ?",
-    "image": "telemed_cucumber",
-    "properties_yes": {
-      "text": "Довериться машине",
-      "pos": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.4,
-        "properties": {"mood": 10, "family": 5}
-      },
-      "neg": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.4,
-        "properties": {"mood": -15, "money": -10}
-      },
-      "neu": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.2,
-        "properties": {"mood": -5}
-      }
+{
+  "id": 13,
+  "is_start": false,
+  "type": 0,
+  "name": "Деньги обжигают карман?",
+  "description": "У Валерия Палыча есть накопления. Как раз пришло время продлить вклад или забрать его. Накапало 1,5 млн. Неплохая сумма.",
+  "image": "babki",
+  "properties_yes": {
+    "text": "",
+    "pos": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {"money": 80}
     },
-    "properties_no": {
-      "text": "Игнорировать наглую программу",
-      "pos": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.5,
-        "properties": {"mood": 15, "investitions": 5}
-      },
-      "neg": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.3,
-        "properties": {"mood": -10}
-      },
-      "neu": {
-        "id_next": -10,
-        "moves_next": 1,
-        "chance": 0.2,
-        "properties": {}
-      }
+    "neg": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {"money": 80}
+    },
+    "neu": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {"money": 80}
+    }
+  },
+  "properties_no": {
+    "text": "Нууу, кому как...",
+    "pos": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {"money": 80}
+    },
+    "neg": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {"money": 80}
+    },
+    "neu": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {"money": 80}
     }
   }
+}

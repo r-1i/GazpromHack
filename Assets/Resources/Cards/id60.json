@@ -1,0 +1,50 @@
+{
+  "id": 60,
+  "is_start": false,
+  "type": 0,
+  "name": "Финансовый перекресток",
+  "description": "Валерий Палыч стоит перед выбором: продлить вклад под 6% или рассмотреть ИСЖ. Марьяна говорит: «Подумайте, что для вас важнее - стабильность вклада или защита + потенциал роста?»",
+  "image": "financial_crossroads",
+  "properties_yes": {
+    "text": "Изучить ИСЖ подробнее",
+    "pos": {
+		"id_next": 61, 
+		"moves_next": 1, 
+		"chance": 0.6, 
+		"properties": {"mood": 5}
+	},
+	"neg": {
+      "id_next": 61,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"mood" : -5, "family": -5}
+    },
+    "neu": {
+      "id_next": 61,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Остаться на вкладе",
+    "pos": {
+		"id_next": 70, 
+		"moves_next": 1, 
+		"chance": 0.5, 
+		"properties": {"mood": 5, "family": 5}
+	},
+	"neg": {
+      "id_next": 70,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {"mood" : -5}
+    },
+    "neu": {
+      "id_next": 70,
+      "moves_next": 1,
+      "chance": 0.2,
+      "properties": {}
+    }
+  }
+}

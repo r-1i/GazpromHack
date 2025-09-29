@@ -1,0 +1,51 @@
+
+  {
+   "id": 200,
+    "is_start": false,
+    "type": 4,
+  "name": "ФИНАЛ: ОГУРЕЧНЫЙ КОРОЛЬ",
+    "description": "Мы не узнали, что с стало с деньгами Валерия Павловича, но знаем, что он до сих пор жив/здоров солит огурцы и видимо в другой раз мы все же узнаем что такое ИСЖ если Валерий Павлович все же решится зайти в банк",
+    "image": "final_cucumber_king",
+    "properties_yes": {
+      "text": "Наслаждаться огуречной славой",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 35, "money": 20, "family": 25, "investitions": 10}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    },
+    "properties_no": {
+      "text": "Конец",
+      "pos": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 1.0,
+        "properties": {"mood": 30, "money": 25, "family": 20, "investitions": 15}
+      },
+      "neg": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      },
+      "neu": {
+        "id_next": -1,
+        "moves_next": 0,
+        "chance": 0.0,
+        "properties": {}
+      }
+    }
+  }
