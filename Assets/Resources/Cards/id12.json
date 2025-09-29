@@ -8,19 +8,19 @@
   "properties_yes": {
     "text": "Нормальный мужик",
     "pos": {
-      "id_next": 12,
+      "id_next": 13,
       "moves_next": 1,
       "chance": 1,
       "properties": {}
     },
     "neg": {
-      "id_next": 12,
+      "id_next": 13,
       "moves_next": 1,
       "chance": 0,
       "properties": {}
     },
     "neu": {
-      "id_next": 12,
+      "id_next": 13,
       "moves_next": 1,
       "chance": 0,
       "properties": {}
@@ -29,19 +29,19 @@
   "properties_no": {
     "text": "Бывает...",
     "pos": {
-      "id_next": 12,
+      "id_next": 13,
       "moves_next": 1,
       "chance": 1,
       "properties": {}
     },
     "neg": {
-      "id_next": 12,
+      "id_next": 13,
       "moves_next": 1,
       "chance": 0,
       "properties": {}
     },
     "neu": {
-      "id_next": 12,
+      "id_next": 13,
       "moves_next": 1,
       "chance": 0,
       "properties": {}
