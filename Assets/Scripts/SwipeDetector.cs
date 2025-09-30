@@ -10,6 +10,7 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [SerializeField] private TextMeshProUGUI name;
     [SerializeField] private TextMeshProUGUI description;
     [SerializeField] private Image icon;
+    [SerializeField] private TextMeshProUGUI textID;
     
     [Header("Настройки свайпа")]
     [SerializeField] private float swipeThreshold = 200f;
@@ -56,6 +57,8 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         
         UIController.instance.leftDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_no.text;
         UIController.instance.rightDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_yes.text;
+        textID.text = cardJson.id.ToString();
+        textID.gameObject.SetActive(SceneLoadValues.Instance.showID);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -73,14 +76,14 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         rectTransform.rotation = Quaternion.Euler(0, 0, rotationZ);
         if (delta.x < 0)
         {
-            UIController.instance.rightBubble.SetVisibilityPercent(-delta.x);
-            UIController.instance.leftBubble.SetVisibilityPercent(0);
+            UIController.instance.rightBubble.SetVisibilityPercent(delta.x);
+            UIController.instance.leftBubble.SetVisibilityPercent(delta.x);
             
         }
         else if (delta.x > 0)
         {
             UIController.instance.leftBubble.SetVisibilityPercent(delta.x);
-            UIController.instance.rightBubble.SetVisibilityPercent(0);
+            UIController.instance.rightBubble.SetVisibilityPercent(delta.x);
         }
 
     }
