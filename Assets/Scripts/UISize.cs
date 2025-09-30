@@ -60,11 +60,22 @@ public class UISize : MonoBehaviour
 			rectTransform = GetComponent<RectTransform>();
 		}
 
-		float clamped = Mathf.Clamp(percent, 0f, 100f);
+		float clamped = Mathf.Clamp(Mathf.Abs(percent), 0f, 100f);
 		float t = clamped / 100f;
-		float targetX = isLeft
-			? Mathf.Lerp(-hideOffset - offset, 0f - offset, t)
-			: Mathf.Lerp(hideOffset + offset, 0f + offset, t);
+		float targetX;
+		print($"PERCENT: {percent}");
+		if (percent < 0)
+		{
+			targetX = isLeft
+				? Mathf.Lerp(-hideOffset - offset, 0f - offset, t)
+				:Mathf.Lerp(hideOffset + offset, hideOffset*2, t);
+		}
+		else
+		{
+			targetX = isLeft
+				? Mathf.Lerp(-hideOffset - offset, -hideOffset*2, t)
+				:Mathf.Lerp(hideOffset + offset, 0f + offset, t);
+		}
 
 		rectTransform.anchoredPosition = new Vector2(targetX, rectTransform.anchoredPosition.y);
 	}
