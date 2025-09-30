@@ -7,6 +7,8 @@
     "image": "Kvadrat_Malka",
     "properties_yes": {
       "text": "Конец",
+      "pos": {
+      
         "id_next": -1,
         "moves_next": 0,
         "chance": 1.0,

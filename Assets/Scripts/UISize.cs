@@ -63,7 +63,6 @@ public class UISize : MonoBehaviour
 		float clamped = Mathf.Clamp(Mathf.Abs(percent), 0f, 100f);
 		float t = clamped / 100f;
 		float targetX;
-		print($"PERCENT: {percent}");
 		if (percent < 0)
 		{
 			targetX = isLeft
