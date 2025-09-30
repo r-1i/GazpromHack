@@ -1,0 +1,20 @@
+{
+  "id": 121,
+  "is_start": false,
+  "type": 2,
+  "name": "Финансовый стендап",
+  "description": "Вы пытаетесь объяснить: «Дорогая, шуба за 300 тысяч через 4 года будет стоить как поношенный халат, а мои 1.5 миллиона гарантированно станут 1.62!». Жена: «То есть ты предлагаешь мне мечтать о халате?». Чувствуете себя финансовым комиком?",
+  "image": "standup",
+  "properties_yes": {
+    "text": "Да я новый Джерри Сайнфелд!",
+    "pos": {"id_next": 190, "moves_next": 1, "chance": 1.0, "properties": {"mood": 25, "family": 20, "investitions": 20}},
+	"neg": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Мой юмор оценили только огурцы",
+    "pos": {"id_next": 190, "moves_next": 1, "chance": 1.0, "properties": {"mood": -10, "family": -15}}
+	"neg": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

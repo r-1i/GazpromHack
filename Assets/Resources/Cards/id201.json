@@ -1,9 +1,5 @@
-
-
-
-  
   {
-   "id": 201,
+    "id": 201,
     "is_start": false,
     "type": 4,
   "name": "Несчастный случай",
@@ -11,7 +7,6 @@
     "image": "Crash_car",
     "properties_yes": {
       "text": "Конец",
-      "pos": {
         "id_next": -1,
         "moves_next": 0,
         "chance": 1.0,

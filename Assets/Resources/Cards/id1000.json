@@ -1,0 +1,50 @@
+{
+  "id": 1000,
+  "is_start": true,
+  "type": 0,
+  "name": "Суть игры",
+  "description": "Чтобы пройти игру, тебе надо балансировать между 4-мя показателями: деньгами, ментальным состоянием, инвестициями и отношением общества к главному герою. Показатели и их состояние отображены сверху. Они будут меняться в зависимости от твоего выбора, не доводи их до 0, удачи!",
+  "image": "vesi",
+  "properties_yes": {
+    "text": "Нормуль",
+    "pos": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Да кого ты учишь!?",
+    "pos": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 301,
+  "is_start": false,
+  "type": 0,
+  "name": "Семья, деньги и настроение",
+  "description": "Ваша задача балансировать показатели семейного лада, настроения и денежного достатка принимая решения. Иногда придется принимать противоречивые решения но мы верим, что Вы справитесь!",
+  "image": "balance",
+  "properties_yes": {
+    "text": "Погнали !",
+    "pos": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "А давайте!",
+    "pos": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

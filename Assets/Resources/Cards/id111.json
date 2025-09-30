@@ -1,0 +1,50 @@
+{
+  "id": 111,
+  "is_start": false,
+  "type": 0,
+  "name": "Долгожданный результат",
+  "description": "Врач через «Телемед» дал рекомендации по диете и давлению. «Отличные показатели! — пишет Марьяна. — Так вы и до 108% гарантии доживете, и сверху инвестиционный доход получите!». Ощущаете ли вы дополнительную ценность сервиса?",
+  "image": "medical_report",
+  "properties_yes": {
+    "text": "Да, забота о клиенте чувствуется",
+    "pos": {
+      "id_next": 190,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 190,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 190,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Это просто маркетинг",
+    "pos": {
+      "id_next": 120,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 120,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 120,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

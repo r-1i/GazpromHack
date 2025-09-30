@@ -1,6 +1,5 @@
-
   {
-   "id": 202,
+    "id": 202,
     "is_start": false,
     "type": 4,
   "name": "Неизвестность",
@@ -8,7 +7,6 @@
     "image": "Kvadrat_Malka",
     "properties_yes": {
       "text": "Конец",
-      "pos": {
         "id_next": -1,
         "moves_next": 0,
         "chance": 1.0,

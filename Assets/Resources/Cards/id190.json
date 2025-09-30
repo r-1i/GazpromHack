@@ -1,0 +1,50 @@
+{
+  "id": 190,
+  "is_start": false,
+  "type": 0,
+  "name": "Итоги: 180 дней смеха и слёз",
+  "description": "Полгода пролетело! Ваши инвестиции показывают +3.2%. Марьяна поздравляет: «Вы пережили первые качели рынка! Осталось всего 42 месяца нервотрепки до гарантированного хэппи-энда!». Готовы к следующим американским горкам?",
+  "image": "American_hie",
+  "properties_yes": {
+    "text": "Вперед, я уже привык к адреналину!",
+    "pos": {
+      "id_next": -1,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Лучше я буду нервировать фикус",
+    "pos": {
+      "id_next": -1,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

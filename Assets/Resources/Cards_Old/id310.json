@@ -1,0 +1,50 @@
+{
+  "id": 310,
+  "is_start": false,
+  "type": 0,
+  "name": "Бонус от страховки",
+  "description": "Вам доступен телемедицинский сервис! Система «Телемед» предлагает: «Проверим ваше здоровье? Ведь главный риск для ИСЖ — это ваше дожитие! А пока рекомендуем  Рекомендуем: 1) Дышать 2) Не смотреть на графики 3) Есть больше огурцов» Довериться цифровому Гиппократу?",
+  "image": "Tele vrach",
+  "properties_yes": {
+    "text": "Огуречная терапия — это по мне!",
+    "pos": {
+      "id_next": 311,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Электронная пытошная? Это без меня!",
+    "pos": {
+      "id_next": 320,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

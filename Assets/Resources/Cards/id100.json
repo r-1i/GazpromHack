@@ -1,0 +1,50 @@
+{
+  "id": 100,
+  "is_start": false,
+  "type": 0,
+  "name": "Три месяца как Уоррен Баффет",
+  "description": "Прошло 3 месяца с момента подписания договора. Марьяна присылает первый отчет: «Ваш портфель из российских акций и облигаций начал работу! Как ощущаете себя инвестором?»",
+  "image": "Otchet",
+  "properties_yes": {
+    "text": "Следить за ростом",
+    "pos": {
+      "id_next": 101,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 101,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 101,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Выразить беспокойство о рисках",
+    "pos": {
+      "id_next": 110,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 110,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 110,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

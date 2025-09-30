@@ -1,0 +1,50 @@
+{
+  "id": 302,
+  "is_start": false,
+  "type": 0,
+  "name": "Диверсификация в действии",
+  "description": "Через месяц облигации в вашем портфеле выросли и компенсировали падение акций. «Видите, как работает наша стратегия 60/40? — пишет Марьяна. — Защитные активы сработали и Ваша копилка стала больше!». Цените ли вы диверсификацию?",
+  "image": "svinka",
+  "properties_yes": {
+    "text": "Да, баланс — это мудро",
+    "pos": {
+      "id_next": 390,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "А если труханет сильнее?",
+    "pos": {
+      "id_next": 320,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": 120,
+  "is_start": false,
+  "type": 2,
+  "name": "Шуба vs Портфель",
+  "description": "Жена, глядя на ваши графики: «Дорогой, твои акции падают быстрее, чем мое настроение от твоих объяснений! Может, купим шубу? Она хотя бы греет!». Попытаться объяснить разницу между мехом и мультипликатором P/E?",
+  "image": "fur_vs_portfolio",
+  "properties_yes": {
+    "text": "Объяснить про инфляцию и норку",
+    "pos": {"id_next": 121, "moves_next": 1, "chance": 1.0, "properties": {"mood": 10, "family": -10}},
+	"neg": {"id_next": 121, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 121, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Молча предложить ей соленый огурец",
+    "pos": {"id_next": 190, "moves_next": 1, "chance": 1.0, "properties": {"mood": -15, "family": -20}},
+	"neg": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

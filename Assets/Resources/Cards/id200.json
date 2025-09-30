@@ -1,6 +1,5 @@
-
   {
-   "id": 200,
+    "id": 200,
     "is_start": false,
     "type": 4,
   "name": "ФИНАЛ: ОГУРЕЧНЫЙ КОРОЛЬ",
@@ -8,7 +7,6 @@
     "image": "final_cucumber_king",
     "properties_yes": {
       "text": "Наслаждаться огуречной славой",
-      "pos": {
         "id_next": -1,
         "moves_next": 0,
         "chance": 1.0,
