@@ -9,4 +9,14 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
+
+    public void SetColorScheme(int index)
+    {
+        SceneLoadValues.Instance.SetColorScheme(index);
+    }
+
+    public void OnShowIDCardChanged(bool show)
+    {
+        SceneLoadValues.Instance.showID = show;
+    }
 }
