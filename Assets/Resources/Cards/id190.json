@@ -1,0 +1,20 @@
+{
+  "id": 190,
+  "is_start": false,
+  "type": 0,
+  "name": "Великий день Дожития",
+  "description": "Настал знаменательный день — окончание договора. Валерий Палыч, благополучно ДОЖИВ (это ключевое слово!) до этой даты, торжественно явился в банк.",
+  "image": "cup",
+  "properties_yes": {
+    "text": "Получить свои барыши",
+    "pos": {"id_next": 191, "moves_next": 1, "chance": 0.5, "properties": {}},
+    "neg": {"id_next": 191, "moves_next": 1, "chance": 0.5, "properties": {}},
+    "neu": {"id_next": 191, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "ДожИл!!!!",
+    "pos": {"id_next": 191, "moves_next": 1, "chance": 1, "properties": {}},
+    "neg": {"id_next": 191, "moves_next": 1, "chance": 0, "properties": {}},
+    "neu": {"id_next": 191, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

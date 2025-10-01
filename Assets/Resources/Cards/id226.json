@@ -1,0 +1,20 @@
+{
+  "id": 226,
+  "is_start": false,
+  "type": 3,
+  "name": "Финансовая магия",
+  "description": "Валерий Палыч вышел из банка с чеком на 1 620 000 рублей (1,5 млн * 108%). Он чувствовал себя не столько финансовым гением, сколько мастером дожития. Он победил главный риск — риск прожить 4 года без особых происшествий. И это достижение было щедро вознаграждено. «Ладно, — решил он. — Пойду куплю жене шубу. А то вдруг новый риск появится — «Развод из-за отсутствия шубы». А по нему, я посмотрел, страховки нет».",
+  "image": "biker",
+  "properties_yes": {
+    "text": "Я свободееееен!!",
+    "pos": {"id_next": 1000, "moves_next": 1, "chance": 0.6, "properties": {"mood": -35, "money": -30, "investitions": -40}},
+    "neg": {"id_next": 1000, "moves_next": 1, "chance": 0.3, "properties": {"mood": -45, "money": -30, "investitions": -50}},
+    "neu": {"id_next": 1000, "moves_next": 1, "chance": 0.1, "properties": {"mood": -25, "money": -30, "investitions": -35}}
+  },
+  "properties_no": {
+    "text": "Словно птица в небесааах",
+    "pos": {"id_next": 1000, "moves_next": 1, "chance": 0.5, "properties": {"mood": -40, "money": -30, "investitions": -45, "family": -10}},
+    "neg": {"id_next": 1000, "moves_next": 1, "chance": 0.4, "properties": {"mood": -50, "money": -30, "investitions": -55}},
+    "neu": {"id_next": 1000, "moves_next": 1, "chance": 0.1, "properties": {"mood": -30,"money": -30, "investitions": -40}}
+  }
+}

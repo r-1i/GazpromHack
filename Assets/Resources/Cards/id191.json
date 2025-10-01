@@ -1,0 +1,20 @@
+{
+  "id": 191,
+  "is_start": false,
+  "type": 0,
+  "name": "Воодушевление",
+  "description": "Марьяна, чуть повзрослевшая, но такая же энергичная, встретила его как героя. «Валерий Палыч, поздравляю! Вы успешно реализовали риск «Дожитие»! Это великое искусство — прожить 4 года!» — с улыбкой произнесла она.",
+  "image": "mariana",
+  "properties_yes": {
+    "text": "Улыбнуться как ребенок",
+    "pos": {"id_next": 192, "moves_next": 1, "chance": 0.5, "properties": {}},
+    "neg": {"id_next": 192, "moves_next": 1, "chance": 0.5, "properties": {}},
+    "neu": {"id_next": 192, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Дыхание перехватило",
+    "pos": {"id_next": 192, "moves_next": 1, "chance": 1, "properties": {}},
+    "neg": {"id_next": 192, "moves_next": 1, "chance": 0, "properties": {}},
+    "neu": {"id_next": 192, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

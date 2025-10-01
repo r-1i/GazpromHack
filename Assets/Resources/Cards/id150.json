@@ -7,14 +7,14 @@
   "image": "American_hie",
   "properties_yes": {
     "text": "Вперед, я уже привык к адреналину!",
-    "pos": {"id_next": 190, "moves_next": 1, "chance": 0.7, "properties": {}},
-    "neg": {"id_next": 170, "moves_next": 1, "chance": 0.3, "properties": {}},
+    "pos": {"id_next": 190, "moves_next": 1, "chance": 0.5, "properties": {}},
+    "neg": {"id_next": 170, "moves_next": 1, "chance": 0.5, "properties": {}},
     "neu": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}}
   },
   "properties_no": {
     "text": "Лучше расторгнуть ИСЖ",
-    "pos": {"id_next": 160, "moves_next": 1, "chance": 1, "properties": {}},
-    "neg": {"id_next": 160, "moves_next": 1, "chance": 0, "properties": {}},
-    "neu": {"id_next": 160, "moves_next": 1, "chance": 0, "properties": {}}
+    "pos": {"id_next": 225, "moves_next": 1, "chance": 1, "properties": {}},
+    "neg": {"id_next": 225, "moves_next": 1, "chance": 0, "properties": {}},
+    "neu": {"id_next": 225, "moves_next": 1, "chance": 0, "properties": {}}
   }
 }
