@@ -13,8 +13,8 @@
   },
   "properties_no": {
     "text": "Лучше расторгнуть ИСЖ",
-    "pos": {"id_next": 160, "moves_next": 1, "chance": 1, "properties": {}},
-    "neg": {"id_next": 160, "moves_next": 1, "chance": 0, "properties": {}},
-    "neu": {"id_next": 160, "moves_next": 1, "chance": 0, "properties": {}}
+    "pos": {"id_next": 225, "moves_next": 1, "chance": 1, "properties": {}},
+    "neg": {"id_next": 225, "moves_next": 1, "chance": 0, "properties": {}},
+    "neu": {"id_next": 225, "moves_next": 1, "chance": 0, "properties": {}}
   }
 }
