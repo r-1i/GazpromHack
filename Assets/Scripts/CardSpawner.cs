@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
 {
@@ -32,6 +33,17 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
 
     public void OnEvent(OnDestroyCardEvent @event)
     {
+        switch (@event.Properties.pos.id_next )
+        {
+            case -122:
+                Application.OpenURL("https://www.gazprombank.ru/personal/page/investment-life-insurance/");
+                SceneManager.LoadScene(0);
+                break;
+            case -300:
+                SceneManager.LoadScene(0);
+                break;
+        }
+        
         AddCardToDeckIfNeeded(@event.Properties);
         GameObject spawnedCard = Instantiate(cardPrefab, cardParent);
         spawnedCard.GetComponent<SwipeDetector>().Initialize(GetCardFromDeck());

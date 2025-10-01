@@ -8,7 +8,7 @@
   "properties_yes": {
     "text": "Сыграть еще",
     "pos": {
-      "id_next": 300,
+      "id_next": -300,
       "moves_next": 1,
       "chance": 1,
       "properties": {}
@@ -29,7 +29,7 @@
   "properties_no": {
     "text": "Как оформить ИСЖ?",
     "pos": {
-      "id_next": -1,
+      "id_next": -122,
       "moves_next": 1,
       "chance": 1,
       "properties": {}
