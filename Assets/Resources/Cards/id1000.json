@@ -1,0 +1,50 @@
+{
+  "id": 1000,
+  "is_start": false,
+  "type": 0,
+  "name": "Конец?",
+  "description": "Инестиционное страхование жизни - это сложный финансовый продукт, который подойдет клиенту, который: - Ищет защиту капитала с гарантией возврата (и небольшого прироста). - Готов заблокировать средства на долгий срок (4 года). - Хочет получить потенциальный доход выше вклада, но с ограниченным риском. - Ценит страховую защиту на случай смерти.",
+  "image": "Sveicarskie chasi",
+  "properties_yes": {
+    "text": "Сыграть еще",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Как оформить ИСЖ?",
+    "pos": {
+      "id_next": -1,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 11,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}
