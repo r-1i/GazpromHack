@@ -1,0 +1,52 @@
+{
+  "id": 15,
+  "is_start": false,
+  "type": 0,
+  "name": "Встреча с Марьяной",
+  "description": "Не успел Валерий Палыч набрать воздуху в грудь, как инициативу перехватила Марьяна, менеджер банка. Энтузиаст своего дела, виртуозно оперирующая словами «гарантия», «надежно» и «потенциальный доход».",
+  "image": "mariana",
+  
+  "properties_yes": {
+    "text": "Улыбнуться и выслушать",
+    "pos": {
+      "id_next": 60,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"mood" : 5}
+    },
+    "neg": {
+      "id_next": 60,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 60,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {}
+    }
+  },
+
+  "properties_no": {
+    "text": "Не внушает она доверия",
+    "pos": {
+      "id_next": 60,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 60,
+      "moves_next": 1,
+      "chance": 0.5,
+      "properties": {"mood" : -5}
+    },
+    "neu": {
+      "id_next":60,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

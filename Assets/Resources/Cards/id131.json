@@ -1,0 +1,19 @@
+{
+  "id": 131,
+  "is_start": false,
+  "type": 2,
+  "name": "Разговор по душам",
+  "description": "Вы неловко заходите в дом с букетом и банкой самых хрустящих огурцов. Жена сидит с красными глазами. «Прости, — говорите вы, — увлекся этими инвестициями... Забыл, ради кого вообще все это...»",
+  "image": "flowers",
+  "properties_yes": {
+    "text": "Обнять и помириться",
+    "pos": {"id_next": 132, "moves_next": 1, "chance": 0.8, "properties": {"mood": 20, "family": 25}},
+    "neg": {"id_next": 133, "moves_next": 1, "chance": 0.1, "properties": {"mood": -10, "family": -15}},
+    "neu": {"id_next": 133, "moves_next": 1, "chance": 0.1, "properties": {"mood": 5, "family": 10}}},
+  "properties_no": {
+    "text": "Потребовать больше времени",
+    "pos": {"id_next": 132, "moves_next": 1, "chance": 0.3, "properties": {"mood": -5, "family": -10}},
+    "neg": {"id_next": 133, "moves_next": 1, "chance": 0.5, "properties": {"mood": -25, "family": -35}},
+    "neu": {"id_next": 133, "moves_next": 1, "chance": 0.2, "properties": {"mood": -15, "family": -20}}
+  }
+}

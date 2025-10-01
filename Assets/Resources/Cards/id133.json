@@ -1,0 +1,22 @@
+{
+  "id": 133,
+  "is_start": false,
+  "type": 2,
+  "name": "Разбитые надежды",
+  "description": "«Хватит этих пустых обещаний! — кричит жена, выбрасывая ваши отчеты ИСЖ в мусор. — Ты выбрал свои графики вместо семьи! Забирай свои бумаги и живи в гараже с этими дурацкими огурцами!». Попытаться вернуть доверие?",
+  "image": "broken_plates",
+  "properties_yes": {
+    "text": "Умолять о прощении",
+    "pos": {"id_next": 132, "moves_next": 1, "chance": 0.2, "properties": {"mood": -25, "family": 10, "investitions": -15}},
+    "neg": {"id_next": 134, "moves_next": 1, "chance": 0.6, "properties": {"mood": -35, "family": -40, "investitions": -20}},
+    "neu": {"id_next": 132, "moves_next": 1, "chance": 0.2, "properties": {"mood": -30, "family": -25, "investitions": -10}
+    }
+  },
+  "properties_no": {
+    "text": "Уйти в гараж с достоинством",
+    "pos": {"id_next": 134, "moves_next": 1, "chance": 0.5, "properties": {"mood": -20, "family": -35, "investitions": 5}},
+    "neg": {"id_next": 134, "moves_next": 1, "chance": 0.4, "properties": {"mood": -40, "family": -45, "investitions": -10}},
+    "neu": {"id_next": 134, "moves_next": 1, "chance": 0.1, "properties": {"mood": -25, "family": -30}
+    }
+  }
+}

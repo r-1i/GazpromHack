@@ -1,0 +1,50 @@
+{
+  "id": 217,
+  "is_start": false,
+  "type": 0,
+  "name": "Своим чередом",
+  "description": "Валерий Павлович не решился сделать вклад, и жизнь пошла своим чередом. А что до его накоплений, то их потихоньку начала есть инфляция. А ведь мог получить более значительные выгоды, но это уже другая история.",
+  "image": "theatre_and_money",
+  "properties_yes": {
+    "text": "Бывает",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 301,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 301,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Ну что поделать...",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 301,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 301,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

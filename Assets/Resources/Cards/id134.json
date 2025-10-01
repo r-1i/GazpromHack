@@ -1,0 +1,20 @@
+{
+  "id": 134,
+  "is_start": false,
+  "type": 2,
+  "name": "Расторжение во гневе",
+  "description": "В ярости и отчаянии вы звоните Марьяне: «Расторгайте договор! Мне нужны деньги на адвоката!». Марьяна вздыхает: «Валерий Палыч, при досрочном расторжении вы теряете 35% суммы... Может, подумаете?»",
+  "image": "angry_termination",
+  "properties_yes": {
+    "text": "Настоять на расторжении",
+    "pos": {"id_next": 135, "moves_next": 1, "chance": 1.0, "properties": {"mood": -50, "money": -35, "family": -50, "investitions": -40}},
+    "neg": {"id_next": 135, "moves_next": 1, "chance": 0.0, "properties": {}},
+    "neu": {"id_next": 135, "moves_next": 1, "chance": 0.0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Передумать и сохранить ИСЖ",
+    "pos": {"id_next": 190, "moves_next": 1, "chance": 0.4, "properties": {"mood": -15, "family": -20, "investitions": 10}},
+    "neg": {"id_next": 190, "moves_next": 1, "chance": 0.4, "properties": {"mood": -25, "family": -30}},
+    "neu": {"id_next": 190, "moves_next": 1, "chance": 0.2, "properties": {"mood": -20, "family": -25}}
+  }
+}

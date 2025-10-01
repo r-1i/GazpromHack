@@ -13,8 +13,8 @@
   },
   "properties_no": {
     "text": "Риск — это не для меня",
-    "pos": {"id_next": 82, "moves_next": 1, "chance": 1, "properties": {"mood": -10, "investitions": -10}},
-	"neg": {"id_next": 82, "moves_next": 1, "chance": 0, "properties": {}},
-	"neu": {"id_next": 82, "moves_next": 1, "chance": 0, "properties": {}}
+    "pos": {"id_next": 90, "moves_next": 1, "chance": 1.0, "properties": {"mood": -10, "investitions": -10}},
+	"neg": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}}
   }
 }

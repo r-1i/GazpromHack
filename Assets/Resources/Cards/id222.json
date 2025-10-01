@@ -1,0 +1,50 @@
+{
+  "id": 222,
+  "is_start": false,
+  "type": 0,
+  "name": "Случается грустное",
+  "description": "Грустно, но вышло так, что Валерий Палыч ушел из жизни по естественным причинам. Благодаря ИСЖ семья беспроблемно получила 10 млн. Не смотря на грустный конец, Валерий Палыч позаботился о своих близких.",
+  "image": "angel",
+  "properties_yes": {
+    "text": "Это жизнь...",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Наверное он прожил счастливую жизнь",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

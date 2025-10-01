@@ -1,0 +1,20 @@
+{
+  "id": 103,
+  "is_start": false,
+  "type": 0,
+  "name": "Сомнения",
+  "description": "Вы очень сильно стали переживать рынкотрясение. Кажется в ИСЖ было что-то успокоительное от врачей. Воспользуемся?",
+  "image": "drugs",
+  "properties_yes": {
+    "text": "Да, спокойствие нужно.",
+    "pos": {"id_next": 110, "moves_next": 1, "chance": 1, "properties": {}},
+    "neg": {"id_next": 110, "moves_next": 1, "chance": 0, "properties": {}},
+    "neu": {"id_next": 110, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Я железный человек!",
+    "pos": {"id_next": 120, "moves_next": 1, "chance": 1, "properties": {}},
+    "neg": {"id_next": 120, "moves_next": 1, "chance": 0, "properties": {}},
+    "neu": {"id_next": 120, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

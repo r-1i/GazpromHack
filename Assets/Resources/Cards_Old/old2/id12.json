@@ -1,0 +1,50 @@
+{
+  "id": 12,
+  "is_start": false,
+  "type": 0,
+  "name": "Увлечения",
+  "description": "Валерий Павлович живет простой жизнью. Его радует внук Степа. Он любит свой гараж и мечтает о Harley Davidson. Жена, кормит его вкусным борщем и часто просит его помочь по хозяйству. Например, огурцы Валерий Палыч солит идеально!",
+  "image": "likes",
+  "properties_yes": {
+    "text": "Нормальный мужик",
+    "pos": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Бывает...",
+    "pos": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 13,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 101,
+  "is_start": false,
+  "type": 0,
+  "name": "Портфель трясёт не по детски!",
+  "description": "Ваш портфель упал на 7% за месяц. Марьяна успокаивает: «Рынок живет циклами! Помните — у вас есть гарантия возврата 100% в конце срока!». Паниковать или довериться стратегии?»",
+  "image": "no_stonks",
+  "properties_yes": {
+    "text": "Это стратегическое отступление!",
+    "pos": {
+      "id_next": 102,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 102,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 102,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Где мои деньги, Лебовски?",
+    "pos": {
+      "id_next": 120,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 120,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 120,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

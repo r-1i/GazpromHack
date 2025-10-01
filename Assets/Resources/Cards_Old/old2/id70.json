@@ -1,0 +1,20 @@
+{
+  "id": 70,
+  "is_start": false,
+  "type": 2,
+  "name": "Неприкосновенность сбережений",
+  "description": "Марьяна понижает голос: «Знаете, ИСЖ защищен от арестов и взысканий. Даже при разводе не делится! Как надежный сейф для ваших накоплений». Заинтересовала ли вас финансовая неприкосновенность?",
+  "image": "financial_immunity",
+  "properties_yes": {
+    "text": "Да, безопасность важна",
+    "pos": {"id_next": 71, "moves_next": 1, "chance": 1.0, "properties": {"mood": 10, "money": 10, "investitions": 5}},
+	"neg": {"id_next": 71, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 71, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Мне нечего скрывать",
+    "pos": {"id_next": 80, "moves_next": 1, "chance": 1.0, "properties": {"mood": -5}},
+	"neg": {"id_next": 80, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 80, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": 61,
+  "is_start": false,
+  "type": 0,
+  "name": "Два в одном",
+  "description": "Марьяна объясняет: «ИСЖ — это как швейцарский нож: и страхование жизни, и инвестиции. При дожитии — 108% гарантии, при уходе — 100% семье. Вклад такого не даст!» Заинтересовала ли вас двойная выгода?",
+  "image": "two_in_one",
+  "properties_yes": {
+    "text": "Да, защита семьи важна",
+    "pos": {"id_next": 62, "moves_next": 1, "chance": 0.8, "properties": {"mood": 10, "family": 10}},
+	"neg": {"id_next": 62, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 62, "moves_next": 1, "chance": 0.2, "properties": {"family": 10}}
+  },
+  "properties_no": {
+    "text": "Сомневаюсь в необходимости страховки",
+    "pos": {"id_next": 80, "moves_next": 1, "chance": 0.8, "properties": {"mood": -5}},
+	"neg": {"id_next": 80, "moves_next": 1, "chance": 0.2, "properties": {"mood": -10}},
+	"neu": {"id_next": 80, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 10,
+  "is_start": true,
+  "type": 0,
+  "name": "Суть игры",
+  "description": "Привет! Ты проживешь историю некоторых клиентов ГазПромБанка. Эти ребята будут попадать в самые разные ситуации. Плавным свайпом влево или вправо помогай им принять решение в ситуациях. Выбор будет появляться с началом перемещения карточки.",
+  "image": "swipe",
+  "properties_yes": {
+    "text": "Проще пареной репы!",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Легко!",
+    "pos": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 300,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

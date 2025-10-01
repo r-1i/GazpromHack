@@ -1,0 +1,20 @@
+{
+  "id": 81,
+  "is_start": false,
+  "type": 2,
+  "name": "Профессиональное управление",
+  "description": "«Вашими деньгами будет управлять ТКБ Инвестмент Партнерс — одна из крупнейших УК России! — гордо говорит Марьяна. — Они работают с Пенсионным фондом РФ!» Доверяете ли вы профессионалам?",
+  "image": "professional_management",
+  "properties_yes": {
+    "text": "Да, лучше довериться экспертам",
+    "pos": {"id_next": 90, "moves_next": 1, "chance": 1.0, "properties": {"mood": 15, "investitions": 20}},
+	"neg": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Сам себе лучший управляющий",
+    "pos": {"id_next": 90, "moves_next": 1, "chance": 1.0, "properties": {"mood": -5, "investitions": -5}},
+	"neg": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

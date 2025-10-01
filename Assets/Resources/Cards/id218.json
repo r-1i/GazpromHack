@@ -1,0 +1,50 @@
+{
+  "id": 218,
+  "is_start": false,
+  "type": 0,
+  "name": "Случается грустное",
+  "description": "Грустно, но вышло так, что Валерий Палыч ушел из жизни по естественным причинам. Семья ничего не получила. Кроме печальных хлопот семье в наследство достались бюрократческие наследственные дрязги. А ведь Валерий мог оставить семье 10 млн и их беспроблемное получение. Но этого не случилось.",
+  "image": "death_and_sorrow",
+  "properties_yes": {
+    "text": "Неприятная ситуация...",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Наверное он прожил счастливую жизнь",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

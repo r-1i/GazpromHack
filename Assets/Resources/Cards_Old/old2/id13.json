@@ -1,0 +1,50 @@
+{
+  "id": 13,
+  "is_start": false,
+  "type": 0,
+  "name": "Деньги обжигают карман?",
+  "description": "У Валерия Палыча есть накопления. Как раз пришло время продлить вклад или забрать его. Накапало 1,5 млн. Неплохая сумма.",
+  "image": "babki",
+  "properties_yes": {
+    "text": "Недурно!",
+    "pos": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {"money": 80}
+    },
+    "neg": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {"money": 80}
+    },
+    "neu": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {"money": 80}
+    }
+  },
+  "properties_no": {
+    "text": "Нууу, кому как...",
+    "pos": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {"money": 80}
+    },
+    "neg": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {"money": 80}
+    },
+    "neu": {
+      "id_next": 14,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {"money": 80}
+    }
+  }
+}

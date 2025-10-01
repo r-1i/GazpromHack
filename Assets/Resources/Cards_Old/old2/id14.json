@@ -1,0 +1,52 @@
+{
+  "id": 14,
+  "is_start": false,
+  "type": 0,
+  "name": "Зайти в банк?",
+  "description": "В задумчивости наш герой застыл перед входом",
+  "image": "bank",
+  
+  "properties_yes": {
+    "text": "Зайти...",
+    "pos": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.4,
+      "properties": {"mood" : 5}
+    },
+    "neg": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {"mood" : -5}
+    },
+    "neu": {
+      "id_next": 15,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {}
+    }
+  },
+
+  "properties_no": {
+    "text": "Та не в этот раз...",
+    "pos": {
+      "id_next": 200,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 201,
+      "moves_next": 1,
+      "chance": 0.35,
+      "properties": {}
+    },
+    "neu": {
+      "id_next":202,
+      "moves_next": 1,
+      "chance": 0.3,
+      "properties": {}
+    }
+  }
+}

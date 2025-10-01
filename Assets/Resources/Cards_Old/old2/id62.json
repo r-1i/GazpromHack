@@ -1,0 +1,20 @@
+{
+  "id": 62,
+  "is_start": false,
+  "type": 2,
+  "name": "Гарантия для внука",
+  "description": "«Представьте, — говорит Марьяна, — если что-то случится, Степа получит деньги сразу, без очередей в наследство. А если все хорошо — вы получите больше, чем на вкладе!» Тронула ли вас забота о внуке?",
+  "image": "grandson_guarantee",
+  "properties_yes": {
+    "text": "Да, думать о наследниках — правильно",
+    "pos": {"id_next": 90, "moves_next": 1, "chance": 1.0, "properties": {"mood": 15, "family": 15, "investitions": 10}},
+	"neg": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 90, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Я и так о нем позабочусь",
+    "pos": {"id_next": 80, "moves_next": 1, "chance": 1.0, "properties": {"mood": -5, "family": -5}},
+	"neg": {"id_next": 80, "moves_next": 1, "chance": 0, "properties": {"mood": -5, "family": -5}},
+	"neu": {"id_next": 80, "moves_next": 1, "chance": 0, "properties": {"mood": -5, "family": -5}}
+  }
+}

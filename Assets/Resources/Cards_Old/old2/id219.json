@@ -1,0 +1,50 @@
+{
+  "id": 220,
+  "is_start": false,
+  "type": 0,
+  "name": "Грустный финал: ДТП",
+  "description": "У этой истории грустный конец. Валерий Палыч на перекрестке засмотрелся на Харлей. ДТП... Валерий Палыч не выжил. Семья ничего не получила. Кроме печальных хлопот семье в наследство достались бюрократческие наследственные дрязги. А ведь Валерий мог оставить семье 10  + 15 + 25 = 50 млн. и их беспроблемное получение с помощью ИСЖ. Но этого не случилось.",
+  "image": "theatre_and_money",
+  "properties_yes": {
+    "text": "Будь проклят этот Харлей",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 301,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 301,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Хороший был мужик",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 301,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 301,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

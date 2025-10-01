@@ -1,0 +1,50 @@
+{
+  "id": 213,
+  "is_start": false,
+  "type": 0,
+  "name": "Консервативный путь",
+  "description": "Вы передумали и не стали оформлять ИСЖ. Деньги остались на вкладе. «Иногда лучшее решение — не рисковать» — философски заключил Валерий Палыч и ушел заниматься консервацией.  А ведь мог получить более значительные выгоды, но это уже другая история.",
+  "image": "garage_doubts",
+  "properties_yes": {
+    "text": "Протереть банки с огурцами",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Махнуть рукой",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": 221,
+  "is_start": false,
+  "type": 4,
+  "name": "Цена амбиций",
+  "description": "Вы получили остаток денег после штрафов и ими пришлось делиться при разводе. Харлей так и остался мечтой, гараж продан при разделе имущества, а банки с огурцами теперь хранятся у дяди Яши. «Инвестиции должны укреплять семью, а не разрушать её», — горько думаете вы, распивая чай в съемной комнате. Возможно все сложится иначе в следующей игре",
+  "image": "theatre_and_money",
+  "properties_yes": {
+    "text": "Осознать горький урок",
+    "pos": {"id_next": 1000, "moves_next": 1, "chance": 1.0, "properties": {"mood": -60, "money": -40, "family": -60, "investitions": -50}},
+    "neg": {"id_next": 1000, "moves_next": 1, "chance": 0.0, "properties": {}},
+    "neu": {"id_next": 1000, "moves_next": 1, "chance": 0.0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Начать сначала.",
+    "pos": {"id_next": 1000, "moves_next": 1, "chance": 1.0, "properties": {"mood": -60, "money": -40, "family": -60, "investitions": -50}},
+    "neg": {"id_next": 1000, "moves_next": 1, "chance": 0.0, "properties": {}},
+    "neu": {"id_next": 1000, "moves_next": 1, "chance": 0.0, "properties": {}}
+  }
+}

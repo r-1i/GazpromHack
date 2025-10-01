@@ -8,19 +8,19 @@
   "properties_yes": {
     "text": "Да, забота о клиенте чувствуется",
     "pos": {
-      "id_next": 120,
+      "id_next": 190,
       "moves_next": 1,
       "chance": 1,
       "properties": {}
     },
     "neg": {
-      "id_next": 120,
+      "id_next": 190,
       "moves_next": 1,
       "chance": 0,
       "properties": {}
     },
     "neu": {
-      "id_next": 120,
+      "id_next": 190,
       "moves_next": 1,
       "chance": 0,
       "properties": {}

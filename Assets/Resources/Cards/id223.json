@@ -1,0 +1,50 @@
+{
+  "id": 223,
+  "is_start": false,
+  "type": 0,
+  "name": "Случаи бывают разные",
+  "description": "Жизнь конечна. Иногда внезапно. Валерий Палыч шел в раздумьях по улице и тут - несчастный случай. Семья по ИСЖ беспроблемно получила 10  + 15 = 25 млн. Не смотря на грустный конец, Валерий Палыч позаботился о своих близких.",
+  "image": "angel",
+  "properties_yes": {
+    "text": "Жалко родню",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Грустная история",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": 122,
+  "is_start": false,
+  "type": 2,
+  "name": "Семейная цена успеха",
+  "description": "Вы так увлеклись мониторингом инвестиций, что пропустили юбилей жены. Теперь спите в гараже, смотрите на графики и едите холодные пельмени. Харлей так и остался мечтой.",
+  "image": "razvod",
+  "properties_yes": {
+    "text": "Наладить отношения?",
+    "pos": {"id_next": 130, "moves_next": 1, "chance": 0.5, "properties": {"mood": 25, "family": 20, "investitions": 20}},
+	"neg": {"id_next": 133, "moves_next": 1, "chance": 0.5, "properties": {}},
+	"neu": {"id_next": 130, "moves_next": 1, "chance": 0, "properties": {}}
+  },
+  "properties_no": {
+    "text": "Меня не ценят",
+    "pos": {"id_next": 133, "moves_next": 1, "chance": 1.0, "properties": {"mood": -10, "family": -15}}
+	"neg": {"id_next": 133, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 133, "moves_next": 1, "chance": 0, "properties": {}}
+  }
+}

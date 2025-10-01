@@ -2,7 +2,7 @@
   "id": 90,
   "is_start": false,
   "type": 0,
-  "name": "Решение принято ?",
+  "name": "Решение принято",
   "description": "Вы взвесили все «за» и «против». Марьяна протягивает договор: «Итак, Валерий Палыч, готовы стать инвестором с страховой защитой? Четыре года — и вы получите гарантированный результат!»",
   "image": "decision_made",
   "properties_yes": {
@@ -13,8 +13,8 @@
   },
   "properties_no": {
     "text": "Вернуться к классическому вкладу",
-    "pos": {"id_next": 82, "moves_next": 1, "chance": 1.0, "properties": {"mood": 10, "money": 10, "investitions": -10}},
-    "neg": {"id_next": 82, "moves_next": 1, "chance": 0, "properties": {}},
-	"neu": {"id_next": 82, "moves_next": 1, "chance": 0, "properties": {}}
+    "pos": {"id_next": -1, "moves_next": 1, "chance": 1.0, "properties": {"mood": 10, "money": 10, "investitions": -10}},
+    "neg": {"id_next": -1, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": -1, "moves_next": 1, "chance": 0, "properties": {}}
   }
 }

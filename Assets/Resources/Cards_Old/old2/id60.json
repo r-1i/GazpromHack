@@ -37,13 +37,13 @@
 	"neg": {
       "id_next": 70,
       "moves_next": 1,
-      "chance": 0.25,
+      "chance": 0.2,
       "properties": {"mood" : -5}
     },
     "neu": {
       "id_next": 70,
       "moves_next": 1,
-      "chance": 0.25,
+      "chance": 0.2,
       "properties": {}
     }
   }

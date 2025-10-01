@@ -1,0 +1,20 @@
+{
+  "id": 130,
+  "is_start": false,
+  "type": 2,
+  "name": "Борщ мира",
+  "description": "Третий день вы спите в гараже, а жена хлопает дверьми. Внезапно к вам заходит внук Степа: «Деда, бабушка плачет! Вчера твой любимый борщ готовила, а ты даже не заметил!». Осознать глубину кризиса?",
+  "image": "borsh",
+  "properties_yes": {
+    "text": "Срочно идти мириться!",
+    "pos": {"id_next": 131, "moves_next": 1, "chance": 0.7, "properties": {"mood": 10, "family": 15}},
+    "neg": {"id_next": 133, "moves_next": 1, "chance": 0.2, "properties": {"mood": -15, "family": -20}},
+    "neu": {"id_next": 133, "moves_next": 1, "chance": 0.1, "properties": {"mood": -5, "family": -10}}
+  },
+  "properties_no": {
+    "text": "Продолжать изучать графики",
+    "pos": {"id_next": 133, "moves_next": 1, "chance": 0.2, "properties": {"mood": -10, "investitions": 5, "family": -25}},
+    "neg": {"id_next": 133, "moves_next": 1, "chance": 0.6, "properties": {"mood": -20, "family": -30}},
+    "neu": {"id_next": 133, "moves_next": 1, "chance": 0.2, "properties": {"mood": -15, "family": -15}}
+  }
+}

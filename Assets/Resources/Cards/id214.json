@@ -1,0 +1,50 @@
+{
+  "id": 214,
+  "is_start": false,
+  "type": 0,
+  "name": "Пропущенный шанс",
+  "description": "Вы не стали оформлять ИСЖ; а рынок за 4 года вырос на 60%. «Надо было рискнуть!» — сокрушается Валерий Палыч, глядя на цены на Харлеи.",
+  "image": "no_stonks",
+  "properties_yes": {
+    "text": "Жалко",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  },
+  "properties_no": {
+    "text": "Грустно",
+    "pos": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 1,
+      "properties": {}
+    },
+    "neg": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    },
+    "neu": {
+      "id_next": 1000,
+      "moves_next": 1,
+      "chance": 0,
+      "properties": {}
+    }
+  }
+}

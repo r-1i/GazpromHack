@@ -13,8 +13,8 @@
   },
   "properties_no": {
     "text": "Молча предложить ей соленый огурец",
-    "pos": {"id_next": 121, "moves_next": 1, "chance": 1.0, "properties": {"mood": -15, "family": -20}},
-	"neg": {"id_next": 121, "moves_next": 1, "chance": 0, "properties": {}},
-	"neu": {"id_next": 121, "moves_next": 1, "chance": 0, "properties": {}}
+    "pos": {"id_next": 190, "moves_next": 1, "chance": 1.0, "properties": {"mood": -15, "family": -20}},
+	"neg": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}},
+	"neu": {"id_next": 190, "moves_next": 1, "chance": 0, "properties": {}}
   }
 }
