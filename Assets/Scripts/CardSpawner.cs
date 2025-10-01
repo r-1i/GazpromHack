@@ -33,7 +33,7 @@ public class CardSpawner : MonoBehaviour, IEventReceiver<OnDestroyCardEvent>
 
     public void OnEvent(OnDestroyCardEvent @event)
     {
-        switch (@event.Properties.pos.id_next )
+        switch (@event.Properties.pos.id_next)
         {
             case -122:
                 Application.OpenURL("https://www.gazprombank.ru/personal/page/investment-life-insurance/");
