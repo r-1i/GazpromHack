@@ -9,8 +9,7 @@
     "text": "Выдохнуть и жить дальше",
     "pos": {"id_next": 190, "moves_next": 1, "chance": 0.8, "properties": {"mood": 20, "family": 25}},
     "neg": {"id_next": 190, "moves_next": 1, "chance": 0.1, "properties": {"mood": -10, "family": -15}},
-    "neu": {"id_next": 190, "moves_next": 1, "chance": 0.1, "properties": {"mood": 5, "family": 10}}
-	},
+    "neu": {"id_next": 190, "moves_next": 1, "chance": 0.1, "properties": {"mood": 5, "family": 10}}},
   "properties_no": {
     "text": "Пронесло...",
     "pos": {"id_next": 190, "moves_next": 1, "chance": 0.3, "properties": {"mood": -5, "family": -10}},

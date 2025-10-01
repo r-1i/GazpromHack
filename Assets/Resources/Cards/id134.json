@@ -7,9 +7,9 @@
   "image": "angry_termination",
   "properties_yes": {
     "text": "Настоять на расторжении",
-    "pos": {"id_next": 221, "moves_next": 1, "chance": 1.0, "properties": {"mood": -50, "money": -35, "family": -50, "investitions": -40}},
-    "neg": {"id_next": 221, "moves_next": 1, "chance": 0.0, "properties": {}},
-    "neu": {"id_next": 221, "moves_next": 1, "chance": 0.0, "properties": {}}
+    "pos": {"id_next": 135, "moves_next": 1, "chance": 1.0, "properties": {"mood": -50, "money": -35, "family": -50, "investitions": -40}},
+    "neg": {"id_next": 135, "moves_next": 1, "chance": 0.0, "properties": {}},
+    "neu": {"id_next": 135, "moves_next": 1, "chance": 0.0, "properties": {}}
   },
   "properties_no": {
     "text": "Передумать и сохранить ИСЖ",
