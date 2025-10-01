@@ -13,7 +13,7 @@
   },
   "properties_no": {
     "text": "Меня не ценят",
-    "pos": {"id_next": 133, "moves_next": 1, "chance": 1.0, "properties": {"mood": -10, "family": -15}}
+    "pos": {"id_next": 133, "moves_next": 1, "chance": 1.0, "properties": {"mood": -10, "family": -15}},
 	"neg": {"id_next": 133, "moves_next": 1, "chance": 0, "properties": {}},
 	"neu": {"id_next": 133, "moves_next": 1, "chance": 0, "properties": {}}
   }
