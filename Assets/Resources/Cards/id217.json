@@ -3,48 +3,20 @@
   "is_start": false,
   "type": 0,
   "name": "Своим чередом",
-  "description": "Валерий Павлович не решился сделать вклад, и жизнь пошла своим чередом. А что до его накоплений, то их потихоньку начала есть инфляция. А ведь мог получить более значительные выгоды, но это уже другая история.",
+  "description": "Валерий Павлович не решился сделать вклад, и жизнь пошла своим чередом. А что до его накоплений, то их потихоньку начала есть инфляция. Как моль ест шубу. А ведь мог получить более значительные выгоды, но это уже другая история.",
   "image": "mole_eat_money",
   "properties_yes": {
     "text": "Бывает...",
-    "pos": {
-      "id_next": 1000,
-      "moves_next": 1,
-      "chance": 1,
-      "properties": {}
-    },
-    "neg": {
-      "id_next": 1000,
-      "moves_next": 1,
-      "chance": 0,
-      "properties": {}
-    },
-    "neu": {
-      "id_next": 1000,
-      "moves_next": 1,
-      "chance": 0,
-      "properties": {}
+    "pos": {"id_next": 1000, "moves_next": 1, "chance": 1, "properties": {}},
+    "neg": {"id_next": 1000, "moves_next": 1, "chance": 0, "properties": {}},
+    "neu": {"id_next": 1000, "moves_next": 1, "chance": 0, "properties": {}
     }
   },
   "properties_no": {
     "text": "Ну что поделать...",
-    "pos": {
-      "id_next": 1000,
-      "moves_next": 1,
-      "chance": 1,
-      "properties": {}
-    },
-    "neg": {
-      "id_next": 1000,
-      "moves_next": 1,
-      "chance": 0,
-      "properties": {}
-    },
-    "neu": {
-      "id_next": 1000,
-      "moves_next": 1,
-      "chance": 0,
-      "properties": {}
+    "pos": {"id_next": 1000, "moves_next": 1, "chance": 1, "properties": {}},
+    "neg": {"id_next": 1000, "moves_next": 1, "chance": 0, "properties": {}},
+    "neu": {"id_next": 1000, "moves_next": 1, "chance": 0, "properties": {}
     }
   }
 }

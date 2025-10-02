@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
@@ -51,12 +52,25 @@ public class SwipeDetector : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         name.text = cardJson.name;
         description.text = cardJson.description;
-        properties_yes = cardJson.properties_yes;
-        properties_no = cardJson.properties_no;
-        icon.sprite = Resources.Load<Sprite>("Images/"+cardJson.image) ?? Resources.Load<Sprite>("Images/no_image");
+        if (Random.value < 0.5f)
+        {
+            properties_yes = cardJson.properties_yes;
+            properties_no = cardJson.properties_no;
+            UIController.instance.leftDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_no.text;
+            UIController.instance.rightDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_yes.text;
+        }
+        else
+        {
+            properties_yes = cardJson.properties_no;
+            properties_no = cardJson.properties_yes;
+            UIController.instance.rightDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_no.text;
+            UIController.instance.leftDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_yes.text;
+        }
+
+        string postfix = SceneLoadValues.Instance.currentColorSchemeID == 1 ? "_recolor" : "";
+        icon.sprite = Resources.Load<Sprite>("Images/"+cardJson.image + postfix) ?? Resources.Load<Sprite>("Images/no_image");
         
-        UIController.instance.leftDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_no.text;
-        UIController.instance.rightDescription.GetComponent<TextMeshProUGUI>().text = cardJson.properties_yes.text;
+        
         textID.text = cardJson.id.ToString();
         textID.gameObject.SetActive(SceneLoadValues.Instance.showID);
     }
