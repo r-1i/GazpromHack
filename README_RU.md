@@ -6,7 +6,6 @@
 ![C#](https://img.shields.io/badge/C%23-Язык-239120?style=for-the-badge&logo=c-sharp)
 ![Platform](https://img.shields.io/badge/Платформа-WebGL-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Статус-Прототип-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/Лицензия-Хакатон-red?style=for-the-badge)
 
 **[🇬🇧 English Version](README.md)**
 
