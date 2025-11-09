@@ -24,7 +24,7 @@
 <tr>
 <td>
 
-GazpromHack is a **decision-making card game** developed for the Gazprom Hackathon, inspired by the acclaimed mobile game "Reigns". Players navigate through stories of Gazprombank clients, making critical life decisions by swiping cards left or right.
+GazpromHack - Stories is a **decision-making card game** developed for the Gazprom Hackathon, inspired by the acclaimed mobile game "Reigns". Players navigate through stories of Gazprombank clients, making critical life decisions by swiping cards left or right.
 
 Each decision impacts **four key life parameters**:
 - 💗 **Mood** - Emotional well-being
