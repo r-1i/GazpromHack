@@ -4,7 +4,7 @@
 
 ![Unity](https://img.shields.io/badge/Unity-2022.3.46f1-black?style=for-the-badge&logo=unity)
 ![C#](https://img.shields.io/badge/C%23-Язык-239120?style=for-the-badge&logo=c-sharp)
-![Platform](https://img.shields.io/badge/Платформа-Mobile-blue?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Платформа-WebGL-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Статус-Прототип-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/Лицензия-Хакатон-red?style=for-the-badge)
 
