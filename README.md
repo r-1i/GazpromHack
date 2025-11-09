@@ -40,7 +40,7 @@ Each decision impacts **four key life parameters**:
 |---|---|
 | **Type** | Mobile Card Game |
 | **Genre** | Decision-Making, Narrative |
-| **Platform** | Android, iOS |
+| **Platform** | WebGL |
 | **Cards** | 54 unique scenarios |
 | **Status** | ✅ Playable Demo |
 | **Dev Time** | Hackathon (72h) |
