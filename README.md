@@ -4,9 +4,8 @@
 
 ![Unity](https://img.shields.io/badge/Unity-2022.3.46f1-black?style=for-the-badge&logo=unity)
 ![C#](https://img.shields.io/badge/C%23-Language-239120?style=for-the-badge&logo=c-sharp)
-![Platform](https://img.shields.io/badge/Platform-Mobile-blue?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-WebGL-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Hackathon-red?style=for-the-badge)
 
 **[🇷🇺 Русская версия](README_RU.md)**
 
@@ -44,7 +43,7 @@ Each decision impacts **four key life parameters**:
 | **Platform** | Android, iOS |
 | **Cards** | 54 unique scenarios |
 | **Status** | ✅ Playable Demo |
-| **Dev Time** | Hackathon (48-72h) |
+| **Dev Time** | Hackathon (72h) |
 
 </td>
 </tr>
