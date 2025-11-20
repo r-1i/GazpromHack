@@ -2,6 +2,7 @@
 
 <div align="center">
 
+[![Играть](https://img.shields.io/badge/🎮_PLAY_GAME_NOW-4CAF50?style=for-the-badge&logoColor=white)](https://r-1i.github.io/GazpromHackathon-Stories-Builds/)
 ![Unity](https://img.shields.io/badge/Unity-2022.3.46f1-black?style=for-the-badge&logo=unity)
 ![C#](https://img.shields.io/badge/C%23-Язык-239120?style=for-the-badge&logo=c-sharp)
 ![Platform](https://img.shields.io/badge/Платформа-WebGL-blue?style=for-the-badge)
