@@ -1,4 +1,4 @@
-# 🎴 GazpromHack - Reigns-like Card Decision Game
+# 🎴 GazpromHack - Card Game with Decision Making
 
 <div align="center">
 
@@ -7,11 +7,11 @@
 ![Platform](https://img.shields.io/badge/Platform-WebGL-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge)
 
-**[🇷🇺 Русская версия](README_RU.md)**
+**[🇬🇧 English Version](README.md)**
 
-*An interactive card game where every swipe shapes your destiny*
+*Interactive card game where every swipe shapes your destiny*
 
-[📖 Overview](#-project-overview) • [🚀 Quick Start](#-how-to-run) • [⚙️ Architecture](#-architecture-and-design) • [🎯 Features](#-functionality) • [📈 Future Plans](#-future-improvements)
+[📖 Overview] • [🚀 Quick Start] • [⚙️ Architecture] • [🎯 Features] • [📈 Plans]
 
 </div>
 
@@ -23,37 +23,37 @@
 <tr>
 <td>
 
-GazpromHack - Stories is a **decision-making card game** developed for the Gazprom Hackathon, inspired by the acclaimed mobile game "Reigns". Players navigate through stories of Gazprombank clients, making critical life decisions by swiping cards left or right.
+Stories — is a **decision-making game**, created for Gazprom hackathon, inspired by the popular mobile game "Reigns". Players go through stories of Gazprombank clients, making important life decisions by swiping cards left or right.
 
-Each decision impacts **four key life parameters**:
-- 💗 **Mood** - Emotional well-being
-- 👨‍👩‍👧 **Family** - Family relationships  
-- 💰 **Money** - Financial status
+Each decision affects **four key life parameters**:
+- 💗 **Mood** - Emotional wellbeing
+- 👨‍👩‍👧 **Family** - Family relationships
+- 💰 **Money** - Financial state
 - 📊 **Investments** - Long-term planning
 
 </td>
 <td width="40%">
 
-### 🎮 Quick Facts
+### 🎮 Brief Data
 
 | | |
 |---|---|
-| **Type** | Mobile Card Game |
-| **Genre** | Decision-Making, Narrative |
+| **Type** | Mobile card game |
+| **Genre** | Decision simulator, Narrative |
 | **Platform** | WebGL |
 | **Cards** | 54 unique scenarios |
-| **Status** | ✅ Playable Demo |
-| **Dev Time** | Hackathon (72h) |
+| **Status** | ✅ Playable demo |
+| **Development** | 48-72h |
 
 </td>
 </tr>
 </table>
 
-> 💡 **Core Concept**: Players experience financial decision-making through engaging narrative gameplay, making it both educational and entertaining.
+> 💡 **Main Idea**: Players master financial decisions through engaging gameplay — it's simultaneously learning and entertainment.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
 <table>
 <tr>
@@ -61,7 +61,7 @@ Each decision impacts **four key life parameters**:
 
 ### 🎮 Game Engine
 - **Unity 2022.3.46f1 LTS**
-- **C#** Programming Language
+- Programming language **C#**
 - **Unity 2D Feature Set 2.0.1**
 
 ### 📦 Unity Packages
@@ -72,13 +72,12 @@ Each decision impacts **four key life parameters**:
 </td>
 <td width="50%">
 
-### 🔧 Third-Party Libraries
-- **DOTween (Demigiant)** - Animation System
+### 🔧 Third-party Libraries
+- **DOTween (Demigiant)** - Animation system
   - Smooth card transitions
   - Easing functions
-  - Professional polish
 
-### 🏗️ Architecture Patterns
+### 🏗️ Architectural Patterns
 - ✅ Singleton Pattern
 - ✅ Event Bus Pattern
 - ✅ Observer Pattern
@@ -96,29 +95,29 @@ Each decision impacts **four key life parameters**:
 
 ```
 ┌─────────────────┐
-│   JSON Cards    │ ← 54 Card Definitions
+│   JSON cards    │ ← 54 card definitions
 └────────┬────────┘
          │
          ▼
 ┌─────────────────┐
-│  CardSpawner    │ ← Deck Management
+│  CardSpawner    │ ← Deck management
 └────────┬────────┘
          │
          ▼
 ┌─────────────────┐
-│ SwipeDetector   │ ← Player Interaction
+│ SwipeDetector   │ ← Player interaction
 └────────┬────────┘
          │
          ▼
 ┌─────────────────┐
-│   Event Bus     │ ← System Communication
+│   Event Bus     │ ← System communication
 └────────┬────────┘
          │
          ├─────────────┬──────────────┐
          ▼             ▼              ▼
 ┌──────────────┐ ┌──────────┐ ┌────────────────┐
-│ Parameters   │ │   UI     │ │  Next Card     │
-│   Update     │ │  Update  │ │   Addition     │
+│ Parameter    │ │ UI       │ │ Adding         │
+│ update       │ │ update   │ │ next card      │
 └──────────────┘ └──────────┘ └────────────────┘
 ```
 
@@ -127,21 +126,21 @@ Each decision impacts **four key life parameters**:
 <details>
 <summary><b>1. 📡 Event-Driven Architecture</b></summary>
 
-**Custom Event Bus System** for decoupled component communication:
+**Custom Event Bus system** for decoupled component communication:
 
 ```csharp
 EventBus → EventBusHolder (Singleton)
     ↓
 Events:
-    - OnDestroyCardEvent (card swiped)
-    - SetParametersEvent (parameter changes)
+    - OnDestroyCardEvent (card swipe)
+    - SetParametersEvent (parameter change)
 ```
 
-**Benefits:**
-- ✅ Loose coupling between systems
-- ✅ Easy feature additions
+**Advantages:**
+- ✅ Weak system coupling
+- ✅ Easy feature addition
 - ✅ Clear data flow
-- ✅ Highly testable
+- ✅ High testability
 
 </details>
 
@@ -150,13 +149,13 @@ Events:
 
 **Data Flow:**
 ```
-JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
+JSON files → Deserialization → SwipeDetector → Event Bus → Actions
 ```
 
 **Card Structure:**
-- Two choices per card (left/right swipe)
+- Two choices per card (swipe left/right)
 - Three possible outcomes (positive, negative, neutral)
-- Configurable outcome probabilities
+- Customizable outcome probabilities
 - Parameter change effects
 - Branching narrative paths
 
@@ -166,13 +165,13 @@ JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
 <summary><b>3. 💾 Game State Management</b></summary>
 
 **Persistent Settings:**
-- `SceneLoadValues` survives scene transitions
+- `SceneLoadValues` persists between scenes
 - Multiple color schemes (Malevich/Gazprom)
 - Debug mode with card ID display
 
 **Parameter System:**
 - Range: 0-100 for each parameter
-- Real-time event-driven updates
+- Real-time updates through events
 - Smooth visual transitions
 
 </details>
@@ -181,9 +180,9 @@ JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
 <summary><b>4. 🔄 Dynamic Deck Management</b></summary>
 
 **Smart Card Spawning:**
-- Initial deck from "starter" cards
+- Initial deck from "starting" cards
 - Dynamic card insertion at specific positions
-- Prevents card repetition
+- Card repetition prevention
 - Fallback random generation (long game mode)
 
 </details>
@@ -191,39 +190,28 @@ JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
 ### 🎨 Design Patterns in Action
 
 | Pattern | Implementation | Purpose |
-|---------|---------------|----------|
+|---------|------------|-----------|
 | **Singleton** | `UIController`, `EventBusHolder` | Global manager access |
 | **Observer** | Event Bus listeners | Parameter updates |
-| **Factory** | Card instantiation from JSON | Dynamic content creation |
+| **Factory** | Card creation from JSON | Dynamic content creation |
 | **Strategy** | Outcome types (pos/neg/neu) | Flexible decision results |
-
-### ⚖️ Technical Trade-offs
-
-> 💭 **Hackathon Pragmatism**: Several design decisions prioritized rapid delivery
-
-| Decision | Reason | Future Fix |
-|----------|--------|------------|
-| 🔴 Hardcoded IDs | Time constraints | Use ScriptableObjects |
-| 🔴 Commented probability code | JSON generation issues | Refactor or remove |
-| 🔴 No save system | Scope limitation | Implement PlayerPrefs |
-| 🔴 Magic numbers | Rapid prototyping | Extract to constants |
 
 ---
 
-## 🎯 Functionality
+## 🎯 Features
 
 ### 🎮 Core Game Loop
 
 ```
-1. 🎴 Card Appears (DOTween animation)
-2. 👆 Player Swipes (left/right decision)
-3. 🎲 Outcome Resolves (probability-based)
-4. 📊 Parameters Update (Event Bus)
-5. ➕ Next Card Queued (dynamic deck)
-6. 🔄 Loop Continues
+1. 🎴 Card appears (DOTween animation)
+2. 👆 Player swipes (left/right decision)
+3. 🎲 Outcome resolves (probability-based)
+4. 📊 Parameters update (Event Bus)
+5. ➕ Next card added (dynamic deck)
+6. 🔄 Loop continues
 ```
 
-### ✨ Feature Highlights
+### ✨ Key Features
 
 #### 1. 👆 Swipe Mechanics
 
@@ -233,18 +221,18 @@ JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
 
 **Visual Feedback:**
 - 🔄 Card rotation (±15°)
-- 💬 Choice bubbles fade in
-- ↩️ Smooth return if swipe too short
-- 🚀 Flying exit animation
+- 💬 Choice bubble popup
+- ↩️ Smooth return on short swipe
+- 🚀 Fly-out animation
 
 </td>
 <td width="50%">
 
 **Technical Details:**
-- Threshold: 200px minimum
-- Physics-based movement
-- Touch & mouse compatible
-- DOTween smooth easing
+- Threshold: minimum 200px
+- Physical movement
+- Touch and mouse compatibility
+- Smooth DOTween easing
 
 </td>
 </tr>
@@ -252,29 +240,29 @@ JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
 
 #### 2. 📊 Parameter System
 
-| Parameter | Icon | Color | Represents |
-|-----------|------|-------|------------|
-| Mood | 💗 | 🔴 Red | Emotional well-being |
+| Parameter | Icon | Color | Meaning |
+|----------|--------|------|----------|
+| Mood | 💗 | 🔴 Red | Emotional wellbeing |
 | Family | 👨‍👩‍👧 | 🟡 Yellow | Family relationships |
-| Money | 💰 | 🟢 Green | Financial status |
+| Money | 💰 | 🟢 Green | Financial state |
 | Investments | 📊 | 🔵 Blue | Long-term planning |
 
 **Mechanics:**
-- ✅ 0-100 range with clamping
-- ✅ Immediate visual updates
+- ✅ Range 0-100 with clamping
+- ✅ Immediate visual update
 - ✅ Fill bar representation
-- ✅ Color-coded feedback
+- ✅ Color feedback
 
 #### 3. 📦 Content System
 
-**54 JSON Cards** with rich data:
+**54 cards in JSON** with rich data:
 
 ```json
 {
   "id": 10,
   "is_start": true,
-  "name": "Tutorial Card",
-  "description": "Card situation...",
+  "name": "Tutorial card",
+  "description": "Situation on card...",
   "properties_yes": {
     "text": "Right choice",
     "pos": {
@@ -287,7 +275,7 @@ JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
 }
 ```
 
-**Card Features:**
+**Card Capabilities:**
 - ✅ Unique character scenarios
 - ✅ Custom character sprites
 - ✅ Branching narratives
@@ -296,20 +284,20 @@ JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
 
 #### 4. 🎨 Visual Customization
 
-**Two Distinct Themes:**
-- 🎨 **Malevich** - Artistic suprematism style
+**Two Separate Themes:**
+- 🎨 **Malevich** - Suprematism art style
 - 🏢 **Gazprom** - Corporate brand colors
 
 **Additional Options:**
 - 🐛 Debug mode (show card IDs)
-- 📱 Responsive UI (multiple resolutions)
+- 📱 Adaptive UI (multiple resolutions)
 - ♾️ Long game mode toggle
 
 #### 5. 🔗 Special Features
 
 | Feature | Description |
-|---------|-------------|
-| 🌐 **External Link** | Card ID -122 opens Gazprombank website |
+|---------|----------|
+| 🌐 **External Link** | Card with ID -122 opens Gazprombank website |
 | 🏁 **Multiple Endings** | Special IDs trigger different conclusions |
 | 🎲 **Dynamic Content** | Fallback random generation mode |
 
@@ -317,62 +305,23 @@ JSON Files → Deserialization → SwipeDetector → Event Bus → Actions
 
 ## 🚧 Challenges and Limitations
 
-### ✅ Technical Challenges Overcome
+### ✅ Overcome Technical Challenges
 
 | Challenge | Solution |
-|-----------|----------|
-| ⚡ Event timing sync | DOTween callback integration |
+|-------|---------|
+| ⚡ Event synchronization | DOTween callback integration |
 | 🎴 Deck management | Custom insertion algorithm |
-| 📱 UI responsiveness | Proportional sizing system |
+| 📱 UI responsiveness | Proportional scaling system |
 | 🎬 Smooth animations | DOTween easing functions |
-
-### ⚠️ Current Limitations
-
-<details>
-<summary><b>📋 Scope Limitations</b></summary>
-
-- ❌ **No save system** - Game state resets
-- ❌ **Limited endings** - Only deck depletion triggers end
-- ❌ **No parameter endings** - Parameters tracked but don't end game
-- ❌ **Single playthrough** - Limited replay value
-
-</details>
-
-<details>
-<summary><b>💻 Technical Debt</b></summary>
-
-```csharp
-// TODO: These need addressing
-const int MAGIC_NUMBER_122 = -122;  // Should be config
-const int MAGIC_NUMBER_300 = -300;  // Should be config
-
-// Commented code needs decision
-// Either refactor or remove completely
-
-// No unit tests
-// Minimal error handling
-```
-
-</details>
 
 <details>
 <summary><b>📝 Content Limitations</b></summary>
 
-- 🔢 **Fixed 54 cards** - No procedural generation
 - 🌍 **Russian only** - No localization
-- 🎨 **Limited sprites** - Optimized for size
-- 🔇 **No audio** - Silent experience
+- 🎨 **Limited sprites** - Size optimization
 
 </details>
 
-### 🐛 Known Issues
-
-- ⚠️ Probability distribution needs verification
-- ⚠️ One-time shuffle at load
-- ⚠️ No JSON validation for card references
-- ⚠️ Extreme aspect ratios may need adjustment
-
----
 
 ## 🚀 How to Run
 
@@ -385,7 +334,7 @@ const int MAGIC_NUMBER_300 = -300;  // Should be config
 **Required Software:**
 - ✅ Unity Hub
 - ✅ Unity 2022.3.46f1 LTS
-- ✅ 4GB RAM minimum
+- ✅ Minimum 4GB RAM
 - ✅ 2GB disk space
 
 </td>
@@ -400,9 +349,9 @@ const int MAGIC_NUMBER_300 = -300;  // Should be config
 </tr>
 </table>
 
-### ⚙️ Installation Guide
+### ⚙️ Installation Instructions
 
-**Step 1: Get the Project**
+**Step 1: Clone Project**
 ```bash
 git clone https://github.com/r-1i/GazpromHack.git
 cd GazpromHack
@@ -412,62 +361,34 @@ cd GazpromHack
 1. Launch Unity Hub
 2. Click **"Add" → "Add project from disk"**
 3. Navigate to `GazpromHack` folder
-4. Unity Hub auto-detects version
+4. Unity Hub will automatically detect version
 5. Install Unity 2022.3.46f1 if prompted
 6. Open project
 
-**Step 3: Verify Setup**
+**Step 3: Check Setup**
 - ⏱️ Wait 2-5 minutes for import
 - ✅ Check Console for errors
-- ✅ Verify DOTween in `Assets/Plugins/Demigiant`
+- ✅ Ensure DOTween in `Assets/Plugins/Demigiant`
 
 > 📦 **Missing DOTween?** Download free from Unity Asset Store
 
 ### ▶️ Running the Game
 
-**Play in Editor:**
-1. Open `Assets/Scenes/MainMenu.unity`
+**Game in Editor:**
+1. Open `Assets/Scenes/MainMenu`
 2. Press **Play** button (▶️)
 3. Swipe cards with mouse
 
-**Build for Mobile:**
-
-<table>
-<tr>
-<td>
-
-**🤖 Android**
-```
-File → Build Settings
-Platform: Android
-Texture: ASTC
-→ Build and Run
-```
-
-</td>
-<td>
-
-**🍎 iOS**
-```
-File → Build Settings
-Platform: iOS
-→ Build
-→ Open in Xcode
-```
-
-</td>
-</tr>
-</table>
 
 ### 🎛️ Configuration
 
 **MainMenu Options:**
-- 🎨 Color scheme selector
+- 🎨 Color scheme selection
 - 🐛 Card ID display toggle
 
 **Advanced (Inspector):**
-- ♾️ `longGame` boolean
-- 📝 Edit JSON in `Assets/Resources/Cards/`
+- ♾️ Boolean `longGame`
+- 📝 JSON editing in `Assets/Resources/Cards/`
 
 ---
 
@@ -492,7 +413,7 @@ GazpromHack/
 │   │   ├── CardJson.cs          # 📋 Data structures
 │   │   ├── CardSpawner.cs       # 🎲 Deck logic
 │   │   ├── SwipeDetector.cs     # 👆 Input handling
-│   │   ├── ParametersListener.cs # 📊 Stats tracking
+│   │   ├── ParametersListener.cs # 📊 Stat tracking
 │   │   ├── UIController.cs      # 🎨 UI management
 │   │   ├── MainMenu.cs          # 🏠 Menu logic
 │   │   ├── SceneLoadValues.cs   # 💾 Persistence
@@ -502,7 +423,7 @@ GazpromHack/
 │       └── Demigiant/           # DOTween library
 │
 ├── 📦 Packages/                 # Unity packages
-├── ⚙️ ProjectSettings/          # Unity config
+├── ⚙️ ProjectSettings/          # Unity configuration
 └── 📖 README.md
 ```
 
@@ -517,7 +438,7 @@ GazpromHack/
 <td width="33%">
 
 #### 🎮 Game Design
-- ✅ Win/Lose conditions
+- ✅ Win/loss conditions
 - ✅ Parameter-based endings
 - ✅ Save/load system
 - ✅ Tutorial system
@@ -527,7 +448,7 @@ GazpromHack/
 <td width="33%">
 
 #### 💻 Technical
-- ✅ Refactor probability logic
+- ✅ Probability logic refactoring
 - ✅ ScriptableObject configs
 - ✅ Robust error handling
 - ✅ Unit test coverage
@@ -550,16 +471,16 @@ GazpromHack/
 ### 🟡 Medium Priority
 
 <details>
-<summary><b>✨ Polish & UX</b></summary>
+<summary><b>✨ Polish and UX</b></summary>
 
 **Audio System:**
 - 🎵 Background music
-- 🔊 Card swipe SFX
+- 🔊 Card swipe sounds
 - 📊 Parameter change sounds
 - 🌆 Ambient audio
 
 **Visual Effects:**
-- ✨ Particle effects
+- ✨ Particle systems
 - 📳 Screen shake
 - 💫 Glow effects
 - 🎬 Animation variety
@@ -577,16 +498,15 @@ GazpromHack/
 - 🏆 Leaderboards
 - 📅 Daily challenges
 - 📱 Social media sharing
-- 👥 Multiplayer mode (future)
 
 </details>
 
 ### 🟢 Long-term Vision
 
 | Category | Features |
-|----------|----------|
+|-----------|---------|
 | 🤖 **Advanced** | AI card generation, Mod support, Analytics |
-| 🌍 **Platform** | Web version, Console ports, Steam release |
+| 🌍 **Platforms** | Web version, Console porting, Steam release |
 | 💼 **Business** | Bank integration, Financial education, Partnerships |
 
 ---
@@ -596,79 +516,49 @@ GazpromHack/
 ### 🎯 What Went Well
 
 | Success | Impact |
-|---------|--------|
-| ⚡ **Rapid Prototyping** | Shipped in hackathon timeframe |
-| 🏗️ **Event Architecture** | Easy to extend features |
+|-------|---------|
+| ⚡ **Rapid Prototyping** | Delivered within hackathon deadline |
+| 🏗️ **Event Architecture** | Easy feature expansion |
 | 📋 **Data-Driven Design** | Non-programmers can add cards |
-| ✨ **DOTween Integration** | Professional feel achieved |
-| 📐 **Code Structure** | Maintainable despite speed |
+| ✨ **DOTween Integration** | Professional look achieved |
+| 📐 **Code Structure** | Maintainable code despite speed |
 
 ### 🚀 Growth Areas
 
 ```
-✅ Testing   → Start with unit tests from day 1
-✅ Config    → Avoid hardcoded values early
-✅ Git       → More frequent, descriptive commits
-✅ Docs      → Code comments and diagrams
-✅ Perf      → Mobile optimization from start
+✅ Testing     → Start with unit tests from day one
+✅ Configuration → Avoid hardcoding from the start
+✅ Git          → More frequent, descriptive commits
+✅ Documentation → Code comments and diagrams
+✅ Performance  → Mobile optimization from start
 ```
 
 ---
 
 ## 🎓 Conclusion
 
-### 💼 For Potential Employers
-
-<table>
-<tr>
-<td width="50%">
-
-#### ✅ Demonstrated Skills
-
-- 🎮 Unity 2022.3 LTS expertise
-- 📝 Clean C# programming
-- 🏛️ Event-driven architecture
-- ✨ Professional animation (DOTween)
-- 📊 Data-driven game design
-- 🚀 Rapid prototyping ability
-
-</td>
-<td width="50%">
-
-#### 🎯 Project Highlights
-
-- ⏱️ 48-72h hackathon delivery
-- 🎴 54 unique cards created
-- 🎨 Multiple visual themes
-- 📱 Mobile-first design
-- 🏗️ Scalable architecture
-- 📖 Comprehensive documentation
-
-</td>
-</tr>
 </table>
 
-> 💎 **Key Takeaway**: This project demonstrates the ability to deliver a polished, playable game prototype under hackathon constraints while maintaining clean architecture and professional code quality.
+> 💎 **Key Takeaway**: This project demonstrates the ability to create a polished, playable game prototype under hackathon conditions while maintaining clean architecture and code quality.
 
 ### 💬 Discussion Topics
 
 Ready to discuss:
-- 🏗️ Architecture decisions and trade-offs
-- 📈 Scaling for production release  
+- 🏗️ Architectural decisions and tradeoffs
+- 📈 Scaling for production release
 - 🔧 Technical implementation details
 - 👥 Team collaboration approaches
-- 🎮 Game design methodology
 
 ---
 
-## 📞 Contact
+## 📞 Contacts
 
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-r--1i-black?style=for-the-badge&logo=github)](https://github.com/r-1i)
 [![Project](https://img.shields.io/badge/Project-GazpromHack-blue?style=for-the-badge&logo=unity)](https://github.com/r-1i/GazpromHack)
 
-**[⬆ Back to Top](#-gazpromhack---reigns-like-card-decision-game)**
+**[⬆ Back to Top](#-gazpromhack---card-game-with-decision-making)**
 
 </div>
 
@@ -677,32 +567,12 @@ Ready to discuss:
 ## 📊 Technical Specifications
 
 <details>
-<summary><b>🔧 Build Information</b></summary>
-
-| Platform | Size | FPS Target | Load Time |
-|----------|------|------------|-----------|
-| 🤖 Android APK | ~30-40 MB | 60 FPS | <2s |
-| 🍎 iOS IPA | ~35-45 MB | 60 FPS | <2s |
-| 🪟 Windows | ~40-50 MB | 60 FPS | <2s |
-
-**Performance Targets:**
-- Mid-range mobile devices (2020+)
-- <100ms touch response time
-- Smooth 60 FPS gameplay
-
-</details>
-
-<details>
 <summary><b>📦 Dependencies</b></summary>
 
 **Required:**
 - Unity 2022.3 LTS or higher
-- DOTween (Free version)
+- DOTween (free version)
 - TextMesh Pro (included)
-
-**Optional:**
-- Unity Cloud Build
-- Firebase Analytics (for production)
 
 </details>
 
@@ -710,11 +580,11 @@ Ready to discuss:
 
 <div align="center">
 
-**⭐ Star this project if you find it interesting!**
+**⭐ Star this project if it interests you!**
 
-*Made with ❤️ during Gazprom Hackathon*
+*Made with ❤️ during Gazprom hackathon*
 
-**Last Updated:** November 2025  
-**Status:** ✅ Playable Prototype
+**Last Update:** November 2025  
+**Status:** ✅ Playable prototype
 
 </div>
