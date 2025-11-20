@@ -8,7 +8,7 @@
 ![Platform](https://img.shields.io/badge/Platform-WebGL-blue?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Prototype-orange?style=for-the-badge)
 
-**[🇬🇧 English Version](README.md)**
+**[🇬🇧 Русская версия](README_RU.md)**
 
 *Interactive card game where every swipe shapes your destiny*
 
